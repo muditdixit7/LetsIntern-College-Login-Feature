@@ -1,2 +1,3 @@
-var exports = module.exports = {}
-exports.dbUrl = "mongodb://localhost:27017/test"
+var appConfig = {}
+appConfig.dbUrl = "mongodb://localhost:27017/test"
+exports.appConfig

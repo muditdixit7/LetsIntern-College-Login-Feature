@@ -1,6 +1,9 @@
+
 var appConfig = require(process.cwd() + '\\AppConfig.js')
 var mongoose = require('mongoose')
 var exports = module.exports = {}
+
+mongoose.connect("mongodb://localhost:27017/test")
 
 var collegeSchema = mongoose.Schema({
 	emailId: String,
@@ -21,7 +24,10 @@ var studentSchema = mongoose.Schema({
 	pursuingYear: String
 })
 
-exports.College = mongoose.model('College', collegeSchema, "CollegeCollection")
-exports.Student = mongoose.model('Student', studentSchema, "StudentCollection")
+var College = mongoose.model('College', collegeSchema, "CollegeCollection")
+var Student = mongoose.model('Student', studentSchema, "StudentCollection")
+
+
+exports.College
+exports.Student
 exports.db = mongoose.connection
-mongoose.connect('mongodb://localhost:27017/test')

@@ -1,2 +1,17 @@
 {
+	"folders":
+	[
+		{
+			"path": "Database"
+		},
+		{
+			"path": "Routes"
+		},
+		{
+			"path": "Services"
+		},
+		{
+			"path": "View"
+		}
+	]
 }
