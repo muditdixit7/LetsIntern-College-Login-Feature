@@ -6,16 +6,17 @@ var Q = require('q')
 
 exports.login = function(request, response) {
 
-	dbInterface.authenticate(College, request, response, callback)
+	dbInterface.authenticate(request, response, callback)
 
 }
 
 var callback = function(err, request, response, result) {
-	if (err) response.send(err)
-	else {
+
+	if (err) {
+		response.send('Login Failed please try again')
+		console.log(err)
+	} else {
 		response.send('Login successfull')
 		console.log(result)
 	}
-
-
 }
