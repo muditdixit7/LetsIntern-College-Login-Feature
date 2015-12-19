@@ -6,20 +6,16 @@ var Q = require('q')
 
 exports.login = function(request, response) {
 
-	var College = new shcemas.College({
-		emailId: request.body.emailId,
-		password: request.body.password,
-	})
+	dbInterface.authenticate(College, request, response, callback)
 
-	Q.fcall(dbInterface.authenticate(College))
-		.then(setToken, returnError)
+}
 
-	var setToken = function() {
-		response.send('success')
+var callback = function(err, request, response, result) {
+	if (err) response.send(err)
+	else {
+		response.send('Login successfull')
+		console.log(result)
 	}
 
-	var returnError = function() {
-		response.send('Login failed.Please try again')
-	}
 
 }
