@@ -3,9 +3,9 @@ var schemas = require(process.cwd() + '\\Database\\UserSchemas.js')
 var dbInterface = require(process.cwd() + '\\Database\\dbInterface.js')
 var appConfig = require(process.cwd() + '\\AppConfig.js')
 
-exports.RegisterCollege = function(request, response) {
+exports.registerCollege = function(request, response) {
 
-	var Colleges = new shcemas.College({
+	var Colleges = new schemas.College({
 		emailId: request.body.emailId,
 		password: request.body.password,
 		name: request.body.collegeName,
@@ -16,5 +16,11 @@ exports.RegisterCollege = function(request, response) {
 		}
 	})
 
-	dbInterface.saveCollege(Colleges)
+	dbInterface.saveCollege(Colleges, request, response, callback)
+}
+
+var callback = function(err, request, response) {
+	if (err) response.send(err)
+	else response.send('Registration successfull please login to proceed.')
+
 }
