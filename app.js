@@ -1,7 +1,8 @@
 var express = require('express')
 var app = express();
 var schemas = require(process.cwd() + '\\Database\\UserSchemas.js')
-var services = require(process.cwd() + '\\RegisterService.js')
+var registerService = require(process.cwd() + '\\Services\\RegisterService.js')
+var loginService = require(process.cwd() + '\\Services\\LoginService.js')
 var appConfig = require(process.cwd() + '\\AppConfig.js')
 var mongoose = require('mongoose')
 var bodyParser = require('body-parser')
@@ -14,6 +15,7 @@ app.use(bodyParser.urlencoded({
 
 
 
+app.post('/public/CollegeRegistration', registerService.RegisterCollege)
 app.post('/public/CollegeRegistration', services.RegisterCollege)
 
 

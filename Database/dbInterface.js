@@ -5,3 +5,10 @@ exports.saveCollege = function(College) {
 		else console.log('done')
 	})
 }
+
+exports.authenticate = function(College) {
+	College.findOne({}, function(err, result) {
+		if (err) console.log('not done')
+		else console.log(result)
+	})
+}

@@ -26,24 +26,3 @@ var studentSchema = mongoose.Schema({
 exports.College = mongoose.model('College', collegeSchema, "CollegeCollection")
 exports.Student = mongoose.model('Student', studentSchema, "StudentCollection")
 exports.db = mongoose.connection
-
-
-/*
-var college = new schemas.College({
-		emailId: "Hello",
-		password: "Hello",
-		name: "Hello",
-		Address: {
-			street: "Hello",
-			city: "Hello",
-			pinCode: 2134545
-		}
-	})
-
-	college.save(function(err) {
-
-		if (err) throw err;
-
-		console.log("Book Saved Successfully");
-
-	});*/
