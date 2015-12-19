@@ -14,9 +14,12 @@ app.use(bodyParser.urlencoded({
 }));
 
 
+app.get('/', function(req, res) {
+	res.send('hello')
+})
 
-app.post('/public/CollegeRegistration', registerService.RegisterCollege)
-app.post('/public/CollegeRegistration', services.RegisterCollege)
+app.post('/CollegeRegistration', registerService.registerCollege)
+app.post('/public/CollegeRegistration', loginService.login)
 
 
 schemas.db.on('error', console.error.bind(console, 'connection error:'));
@@ -29,9 +32,7 @@ schemas.db.once('open', function() {
 			var host = server.address().address
 			var port = server.address().port
 			console.log("Server runnig at http:\\%s:%s", host, port)
-			app.get('/', function(request, response) {
-				response.send('hello')
-			})
+
 		}
 	})
 });

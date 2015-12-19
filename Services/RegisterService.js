@@ -2,10 +2,10 @@ var exports = module.exports = {}
 var schemas = require(process.cwd() + '\\Database\\UserSchemas.js')
 var dbInterface = require(process.cwd() + '\\Database\\dbInterface.js')
 var appConfig = require(process.cwd() + '\\AppConfig.js')
+var Q = require('q')
+exports.registerCollege = function(request, response) {
 
-exports.RegisterCollege = function(request, response) {
-
-	var Colleges = new shcemas.College({
+	var Colleges = new schemas.College({
 		emailId: request.body.emailId,
 		password: request.body.password,
 		name: request.body.collegeName,
@@ -16,5 +16,20 @@ exports.RegisterCollege = function(request, response) {
 		}
 	})
 
-	dbInterface.saveCollege(Colleges)
+	Q.fcall(dbInterface.saveCollege(Colleges))
+		.then(returnSuccess)
+
+
+
+	var returnError = function() {
+		response.send('Registration failed .Please try again')
+	}
+
+	var returnSuccess = function() {
+			response.send('Registration Successful.Please login to proceed')
+		}
+		.catch(function(err) {
+			console.log(err)
+			returnError
+		})
 }
