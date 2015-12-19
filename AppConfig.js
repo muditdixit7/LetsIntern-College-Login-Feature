@@ -1,4 +1,4 @@
 var events = require('events');
-var appConfig = {}
-appConfig.dbUrl = "mongodb://localhost:27017/test"
-exports.appConfig
+var exports = module.exports = {}
+exports.dbUrl = "mongodb://localhost:27017/test"
+exports.secret = "LetsInternCollegLogin"
