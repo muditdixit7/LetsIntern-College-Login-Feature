@@ -4,16 +4,28 @@
 		"selected_items":
 		[
 			[
+				"re",
+				"result"
+			],
+			[
 				"s",
-				"successCallback"
+				"secret"
+			],
+			[
+				"exp",
+				"express"
+			],
+			[
+				"pr",
+				"privateRoutes"
+			],
+			[
+				"pub",
+				"publicRoutes"
 			],
 			[
 				"err",
-				"errorCallback"
-			],
-			[
-				"re",
-				"response"
+				"err"
 			],
 			[
 				"te",
@@ -78,10 +90,6 @@
 			[
 				"to",
 				"toArray"
-			],
-			[
-				"pr",
-				"print"
 			],
 			[
 				"con",
@@ -295,7 +303,29 @@
 			"file": "app.js",
 			"settings":
 			{
-				"buffer_size": 1051,
+				"buffer_size": 1053,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "var exports = module.exports = {}\nexports.Router = require('express').Router();\nvar registerService = require(process.cwd() + '\\\\Services\\\\RegisterService.js')\nvar loginService = require(process.cwd() + '\\\\Services\\\\LoginService.js')\n\n\nexports.Router.post('/Registration', registerService.registerCollege)\nexports.Router.post('/Login', loginService.login)",
+			"file": "Routes/PublicRoutes.js",
+			"file_size": 362,
+			"file_write_time": 130950218956236314,
+			"settings":
+			{
+				"buffer_size": 355,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "var exports = module.exports = {}\nexports.Router = require('express').Router();\nvar Cookies = require('cookies')\n\nexports.Router.use(function(req, res, next) {\n	if (!req.decoded) {\n		var cookies = new Cookies(req, res)\n		var token = cookies.get('authentication_token')\n		if (token) {\n			jwt.verify(token, appConfig.secret, function(err, decoded) {\n				if (err) {\n					res.json({\n						success: false,\n						message: 'Authentication failed'\n					})\n					res.end()\n				} else {\n					req.decoded = decoded\n					next()\n				}\n			})\n		} else {\n			res.json({\n				success: false,\n				message: 'Authentication failed'\n			})\n			res.end()\n		}\n	}\n})",
+			"file": "Routes/PrivateRoutes.js",
+			"file_size": 666,
+			"file_write_time": 130950232567904856,
+			"settings":
+			{
+				"buffer_size": 637,
 				"line_ending": "Windows"
 			}
 		},
@@ -303,7 +333,7 @@
 			"file": "AppConfig.js",
 			"settings":
 			{
-				"buffer_size": 120,
+				"buffer_size": 155,
 				"line_ending": "Windows"
 			}
 		},
@@ -316,23 +346,23 @@
 			}
 		},
 		{
-			"file": "Database/dbInterface.js",
-			"settings":
-			{
-				"buffer_size": 378,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "Services/RegisterService.js",
 			"settings":
 			{
-				"buffer_size": 635,
+				"buffer_size": 766,
 				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "Services/InitService.js",
+			"settings":
+			{
+				"buffer_size": 17,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Services/UploadStudentDataService.js",
 			"settings":
 			{
 				"buffer_size": 0,
@@ -343,7 +373,7 @@
 			"file": "Services/LoginService.js",
 			"settings":
 			{
-				"buffer_size": 633,
+				"buffer_size": 816,
 				"line_ending": "Windows"
 			}
 		}
@@ -412,11 +442,13 @@
 	},
 	"expanded_folders":
 	[
-		"/D/LetsIntern-College-Login-Feature/Database",
-		"/D/LetsIntern-College-Login-Feature/Routes"
+		"/D/LetsIntern-College-Login-Feature/Services"
 	],
 	"file_history":
 	[
+		"/D/LetsIntern-College-Login-Feature/AppConfig.js",
+		"/D/LetsIntern-College-Login-Feature/Database/dbInterface.js",
+		"/D/LetsIntern-College-Login-Feature/Services/publicRoutes.js",
 		"/D/LetsIntern-College-Login-Feature/CollegeLogin.sublime-project",
 		"/D/collection-library/lib/HashMap.js",
 		"/D/collection-library/lib/Stack.js",
@@ -557,7 +589,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -566,15 +598,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1051,
+						"buffer_size": 1053,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								585,
-								585
+								717,
+								717
 							]
 						],
 						"settings":
@@ -586,39 +618,98 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "AppConfig.js",
+					"file": "Routes/PublicRoutes.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 120,
+						"buffer_size": 355,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								31,
-								31
+								355,
+								355
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
+					"file": "Routes/PrivateRoutes.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 637,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								447,
+								447
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "AppConfig.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 155,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								155,
+								155
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
 					"file": "Database/UserSchemas.js",
 					"semi_transient": false,
 					"settings":
@@ -643,70 +734,69 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "Database/dbInterface.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 378,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								378,
-								378
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "Services/RegisterService.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 635,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								635,
-								635
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 5,
+					"file": "Services/RegisterService.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 766,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								310,
+								325
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
 					"file": "Services/InitService.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 17,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								17,
+								17
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "Services/UploadStudentDataService.js",
 					"semi_transient": false,
 					"settings":
 					{
@@ -729,24 +819,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 8,
 					"file": "Services/LoginService.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 633,
+						"buffer_size": 816,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								481,
-								481
+								809,
+								809
 							]
 						],
 						"settings":
@@ -755,10 +845,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 102.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -797,7 +887,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 118.0
+		"height": 175.0
 	},
 	"output.find_results":
 	{
