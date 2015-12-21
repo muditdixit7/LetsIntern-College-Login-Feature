@@ -1,7 +1,7 @@
-var exports = module.exports = {}
-var schemas = require(process.cwd() + '\\Database\\UserSchemas.js')
-var dbInterface = require(process.cwd() + '\\Database\\dbInterface.js')
-var appConfig = require(process.cwd() + '\\AppConfig.js')
+var exports = module.exports = {},
+	schemas = require(process.cwd() + '\\Database\\UserSchemas.js'),
+	dbInterface = require(process.cwd() + '\\Database\\dbInterface.js'),
+	appConfig = require(process.cwd() + '\\AppConfig.js');
 
 exports.registerCollege = function(request, response) {
 

@@ -1,14 +1,12 @@
 var mongoose = require('mongoose'),
 	bodyParser = require('body-parser'),
 	express = require('express'),
-
 	path = require('path'),
 	app = express(),
 	Cookies = require('cookies'),
 
 	schemas = require(process.cwd() + '\\Database\\UserSchemas.js'),
 	appConfig = require(process.cwd() + '\\AppConfig.js'),
-
 	publicRoutes = require(process.cwd() + '\\Routes\\PublicRoutes.js'),
 	privateRoutes = require(process.cwd() + '\\Routes\\PrivateRoutes.js');
 

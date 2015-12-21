@@ -1,9 +1,10 @@
 var exports = module.exports = {}
-var fs = require('fs')
-var xlsx = require('node-xlsx')
-var async = require('async')
-var dbInterface = require(process.cwd() + '\\Database\\dbInterface.js')
-var schemas = require(process.cwd() + '\\Database\\UserSchemas.js')
+var fs = require('fs'),
+  xlsx = require('node-xlsx'),
+  async = require('async'),
+  dbInterface = require(process.cwd() + '\\Database\\dbInterface.js'),
+  schemas = require(process.cwd() + '\\Database\\UserSchemas.js');
+
 
 exports.Uploader = function(req, res) {
 
