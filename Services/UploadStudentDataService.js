@@ -1,27 +1,27 @@
 var exports = module.exports = {}
 var fs = require('fs')
+var xlsx = require('node-xlsx')
+var async = require('async')
+var dbInterface = require(process.cwd() + '\\Database\\dbInterface.js')
+var schemas = require(process.cwd() + '\\Database\\UserSchemas.js')
 
 exports.Uploader = function(req, res) {
-  console.log(req)
-  console.log(req.files.file.name);
-  console.log(req.files.file.path);
-  console.log(req.files.file.type);
 
-  var file = __dirname + "/" + req.files.file.name;
-  fs.readFile(req.files.file.path, function(err, data) {
-    //fs.writeFile(file, data, function(err) {
-    if (err) {
-      console.log(err);
-    } else {
-      response = {
-        message: 'File uploaded successfully',
-        filename: req.files.file.name
-      };
-    }
-    console.log(response);
-    res.end(JSON.stringify(response));
-    console.log(data)
-      //});
-    console.log(data)
-  });
+  var excelObj = xlsx.parse(fs.readFileSync(process.cwd() + '\\' + req.files[0].path))
+
+  for (var index = 0; index < excelObj.length; index++)
+    async.forEach(excelObj[index].data, function(data) {
+
+      if (data[0] === 'Name' || data[1] === 'Email')
+        return
+
+      var student = new schemas.Student({
+        name: data[0],
+        email: data[1],
+        mobileNo: data[2],
+        course: data[3],
+        pursuingYear: data[4]
+      })
+      dbInterface.saveStudent(student)
+    })
 }

@@ -27,7 +27,7 @@ var callback = function(err, request, response, result) {
 		});
 
 		cookies.set('authentication_token', token)
-		response.send('Login successfull')
+		res.sendFile(path.join(process.cwd() + '\\View\\trial.html'))
 		console.log(result)
 
 	}
