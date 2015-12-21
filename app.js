@@ -1,20 +1,19 @@
-var mongoose = require('mongoose')
-var bodyParser = require('body-parser')
-var express = require('express')
-var multer = require('multer');
-var path = require('path')
-var app = express();
+var mongoose = require('mongoose'),
+	bodyParser = require('body-parser'),
+	express = require('express'),
+	multer = require('multer'),
+	path = require('path'),
+	app = express(),
+	Cookies = require('cookies'),
 
-var schemas = require(process.cwd() + '\\Database\\UserSchemas.js')
-var appConfig = require(process.cwd() + '\\AppConfig.js')
-var uploadStudentData = require(process.cwd() + '\\Services\\UploadStudentDataService.js')
-var publicRoutes = require(process.cwd() + '\\Routes\\PublicRoutes.js')
-var privateRoutes = require(process.cwd() + '\\Routes\\PrivateRoutes.js')
+	schemas = require(process.cwd() + '\\Database\\UserSchemas.js'),
+	appConfig = require(process.cwd() + '\\AppConfig.js'),
+	uploadStudentData = require(process.cwd() + '\\Services\\UploadStudentDataService.js'),
+	publicRoutes = require(process.cwd() + '\\Routes\\PublicRoutes.js'),
+	privateRoutes = require(process.cwd() + '\\Routes\\PrivateRoutes.js');
 
-console.log('app mei', appConfig.secret)
+
 app.set('superSecret', appConfig.secret)
-
-console.log(multer)
 
 
 app.use(bodyParser.urlencoded({
@@ -27,6 +26,39 @@ app.use(multer({
 
 app.use('/public', publicRoutes.Router)
 app.use('/private', privateRoutes.Router)
+
+
+app.all('private', function() {
+
+	exports.Router.use(function(req, res, next) {
+		if (!req.decoded) {
+			var cookies = new Cookies(req, res)
+			var token = cookies.get('authentication_token')
+			if (token) {
+				jwt.verify(token, appConfig.secret, function(err, decoded) {
+					if (err) {
+						res.json({
+							success: false,
+							message: 'Authentication failed'
+						})
+						res.end()
+					} else {
+						req.decoded = decoded
+						next()
+					}
+				})
+			} else {
+				res.json({
+					success: false,
+					message: 'Authentication failed'
+				})
+				res.end()
+			}
+		}
+	})
+})
+
+
 
 app.get('/', function(req, res) {
 	res.sendFile(path.join(process.cwd() + '\\View\\CollegeLogin.html'))
