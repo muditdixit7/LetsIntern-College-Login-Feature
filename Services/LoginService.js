@@ -1,10 +1,9 @@
-var exports = module.exports = {}
-var jwt = require('jsonwebtoken')
-var Cookies = require('cookies')
-
-var schemas = require(process.cwd() + '\\Database\\UserSchemas.js')
-var dbInterface = require(process.cwd() + '\\Database\\dbInterface.js')
-var appConfig = require(process.cwd() + '\\AppConfig.js')
+var exports = module.exports = {},
+	jwt = require('jsonwebtoken'),
+	Cookies = require('cookies'),
+	schemas = require(process.cwd() + '\\Database\\UserSchemas.js'),
+	dbInterface = require(process.cwd() + '\\Database\\dbInterface.js'),
+	appConfig = require(process.cwd() + '\\AppConfig.js');
 
 
 exports.login = function(request, response) {
@@ -27,8 +26,7 @@ var callback = function(err, request, response, result) {
 		});
 
 		cookies.set('authentication_token', token)
-		response.send('Login successfull')
+		res.sendFile(path.join(process.cwd() + '\\View\\trial.html'))
 		console.log(result)
-
 	}
 }
