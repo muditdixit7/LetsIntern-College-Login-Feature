@@ -8,6 +8,13 @@ exports.saveCollege = function(College, request, response, callback) {
 	})
 }
 
+exports.saveStudent = function(student) {
+	student.save(function(err, result) {
+		if (err) console.log('false')
+		else console.log('true')
+	})
+}
+
 exports.authenticate = function(request, response, callback) {
 	schemas.College.findOne({
 		'emailId': request.body.emailId,
