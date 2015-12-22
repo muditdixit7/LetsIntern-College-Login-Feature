@@ -1,42 +1,65 @@
-var mongoose = require('mongoose')
-var bodyParser = require('body-parser')
-var express = require('express')
-var multer = require('multer');
-var path = require('path')
-var app = express();
+var mongoose = require('mongoose'),
+	bodyParser = require('body-parser'),
+	express = require('express'),
+	path = require('path'),
+	app = express(),
+	Cookies = require('cookies'),
 
-var schemas = require(process.cwd() + '\\Database\\UserSchemas.js')
-var appConfig = require(process.cwd() + '\\AppConfig.js')
-var uploadStudentData = require(process.cwd() + '\\Services\\UploadStudentDataService.js')
-var publicRoutes = require(process.cwd() + '\\Routes\\PublicRoutes.js')
-var privateRoutes = require(process.cwd() + '\\Routes\\PrivateRoutes.js')
+	schemas = require(process.cwd() + '\\Database\\UserSchemas.js'),
+	appConfig = require(process.cwd() + '\\AppConfig.js'),
+	publicRoutes = require(process.cwd() + '\\Routes\\PublicRoutes.js'),
+	privateRoutes = require(process.cwd() + '\\Routes\\PrivateRoutes.js');
 
-console.log('app mei', appConfig.secret)
 app.set('superSecret', appConfig.secret)
-
-console.log(multer)
 
 
 app.use(bodyParser.urlencoded({
 	extended: false
 }));
 
-app.use(multer({
-	dest: './uploads/'
-}))
 
 app.use('/public', publicRoutes.Router)
 app.use('/private', privateRoutes.Router)
 
+/*
+app.all('/private', function() {
+
+	exports.Router.use(function(req, res, next) {
+		if (!req.decoded) {
+			var cookies = new Cookies(req, res)
+			var token = cookies.get('authentication_token')
+			if (token) {
+				jwt.verify(token, appConfig.secret, function(err, decoded) {
+					if (err) {
+						res.json({
+							success: false,
+							message: 'Authentication failed'
+						})
+						res.end()
+					} else {
+						req.decoded = decoded
+						next()
+					}
+				})
+			} else {
+				res.json({
+					success: false,
+					message: 'Authentication failed'
+				})
+				res.end()
+			}
+		}
+	})
+})
+*/
 app.get('/', function(req, res) {
 	res.sendFile(path.join(process.cwd() + '\\View\\CollegeLogin.html'))
 })
 
-app.post('/file_upload', uploadStudentData.Uploader)
 
 schemas.db.on('error', console.error.bind(console, 'connection error:'));
 schemas.db.once('open', function() {
-	var server = app.listen(8087, function(err) {
+	var server = app.listen(8086, function(err) {
 		if (err) throw err
 		else {
 			var host = server.address().address
