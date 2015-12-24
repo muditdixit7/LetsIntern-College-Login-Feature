@@ -3,6 +3,8 @@ var exports = module.exports = {},
 	dbInterface = require(process.cwd() + '\\Database\\dbInterface.js'),
 	appConfig = require(process.cwd() + '\\AppConfig.js');
 
+/*Functoin to register college , create a college object using mongoose and call dbinterface.saveCollege
+function to be saved*/
 exports.registerCollege = function(request, response) {
 
 	var Colleges = new schemas.College({
@@ -19,7 +21,12 @@ exports.registerCollege = function(request, response) {
 	dbInterface.saveCollege(Colleges, request, response, callback)
 }
 
+
+//*Callback function for register service*//
 var callback = function(err, request, response) {
+
+	//*Some Wrapping can be done before sending error back to the user*//
+
 	if (err) response.send(err)
 	else response.send('Registration successfull please login to proceed.')
 

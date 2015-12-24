@@ -4,11 +4,18 @@ var mongoose = require('mongoose'),
 	path = require('path'),
 	app = express(),
 	Cookies = require('cookies'),
+	exports = module.exports = {},
 
-	schemas = require(process.cwd() + '\\Database\\UserSchemas.js'),
+
 	appConfig = require(process.cwd() + '\\AppConfig.js'),
 	publicRoutes = require(process.cwd() + '\\Routes\\PublicRoutes.js'),
 	privateRoutes = require(process.cwd() + '\\Routes\\PrivateRoutes.js');
+
+
+mongoose.connect(appConfig.dbUrl)
+exports.db = mongoose.connection
+
+
 
 app.set('superSecret', appConfig.secret)
 
@@ -22,7 +29,11 @@ app.use(bodyParser.urlencoded({
 app.use('/public', publicRoutes.Router)
 app.use('/private', privateRoutes.Router)
 
-/*
+app.get('/', function(req, res) {
+	res.sendFile(path.join(process.cwd() + '\\View\\CollegeLogin.html'))
+})
+
+
 app.all('/private', function() {
 
 	exports.Router.use(function(req, res, next) {
@@ -52,14 +63,10 @@ app.all('/private', function() {
 		}
 	})
 })
-*/
-app.get('/', function(req, res) {
-	res.sendFile(path.join(process.cwd() + '\\View\\CollegeLogin.html'))
-})
 
 
-schemas.db.on('error', console.error.bind(console, 'connection error:'));
-schemas.db.once('open', function() {
+exports.db.on('error', console.error.bind(console, 'connection error:'));
+exports.db.once('open', function() {
 
 	var server = app.listen(8086, function(err) {
 		if (err) throw err
