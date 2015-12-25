@@ -1,5 +1,5 @@
-var exports = module.exports = {}
-var fs = require('fs'),
+var exports = module.exports = {},
+  fs = require('fs'),
   xlsx = require('node-xlsx'),
   async = require('async'),
   dbInterface = require(process.cwd() + '\\Database\\dbInterface.js'),

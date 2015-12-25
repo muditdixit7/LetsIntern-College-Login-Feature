@@ -4,7 +4,7 @@ var mongoose = require('mongoose'),
 	path = require('path'),
 	app = express(),
 	Cookies = require('cookies'),
-
+	
 	schemas = require(process.cwd() + '\\Database\\UserSchemas.js'),
 	appConfig = require(process.cwd() + '\\AppConfig.js'),
 	publicRoutes = require(process.cwd() + '\\Routes\\PublicRoutes.js'),
@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({
 app.use('/public', publicRoutes.Router)
 app.use('/private', privateRoutes.Router)
 
-/*
+
 app.all('/private', function() {
 
 	exports.Router.use(function(req, res, next) {
@@ -51,7 +51,7 @@ app.all('/private', function() {
 		}
 	})
 })
-*/
+
 app.get('/', function(req, res) {
 	res.sendFile(path.join(process.cwd() + '\\View\\CollegeLogin.html'))
 })

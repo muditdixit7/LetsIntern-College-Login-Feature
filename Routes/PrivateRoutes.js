@@ -1,7 +1,7 @@
 var exports = module.exports = {},
 	multer = require('multer'),
-	uploadStudentData = require(process.cwd() + '\\Services\\UploadStudentDataService.js'),
-	exports.Router = require('express').Router(),
+	uploadStudentData = require(process.cwd() + '\\Services\\UploadStudentDataService.js');
+exports.Router = require('express').Router(),
 	upload = multer({
 		dest: './uploads/'
 	});
