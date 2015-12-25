@@ -28,7 +28,7 @@ var callback = function(err, request, response, result) {
 		});
 
 		cookies.set('authentication_token', token)
-		response.sendFile(path.join(process.cwd() + '\\View\\trial.html'))
+		response.sendFile(path.join(process.cwd() + '\\View\\UploadStudentData.html'))
 		console.log(result)
 	}
 }

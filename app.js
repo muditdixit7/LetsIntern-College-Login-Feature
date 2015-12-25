@@ -4,18 +4,26 @@ var mongoose = require('mongoose'),
 	path = require('path'),
 	app = express(),
 	Cookies = require('cookies'),
-	
-	schemas = require(process.cwd() + '\\Database\\UserSchemas.js'),
+	exports = module.exports = {},
+
+
 	appConfig = require(process.cwd() + '\\AppConfig.js'),
 	publicRoutes = require(process.cwd() + '\\Routes\\PublicRoutes.js'),
 	privateRoutes = require(process.cwd() + '\\Routes\\PrivateRoutes.js');
+
+console.log(appConfig.dbUrl)
+mongoose.connect(appConfig.dbUrl)
+exports.db = mongoose.connection
+
+
 
 app.set('superSecret', appConfig.secret)
 
 
 app.use(bodyParser.urlencoded({
 	extended: false
-}));
+}))
+
 
 
 app.use('/public', publicRoutes.Router)
@@ -57,8 +65,10 @@ app.get('/', function(req, res) {
 })
 
 
-schemas.db.on('error', console.error.bind(console, 'connection error:'));
-schemas.db.once('open', function() {
+exports.db.on('error', console.error.bind(console, 'connection error:'));
+
+exports.db.once('open', function() {
+
 	var server = app.listen(8086, function(err) {
 		if (err) throw err
 		else {
