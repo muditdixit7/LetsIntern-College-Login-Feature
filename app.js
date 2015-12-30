@@ -62,6 +62,10 @@ app.all('/private', function() {
 app.get('/', function(req, res) {
 	res.sendFile(path.join(process.cwd() + '\\View\\CollegeLogin.html'))
 })
+app.get('/CollegeRegistration', function(req, res) {
+	console.log('came here')
+	res.sendFile(path.join(process.cwd() + '\\View\\CollegeRegistration.html'))
+})
 
 
 exports.db.on('error', console.error.bind(console, 'connection error:'));

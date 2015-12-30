@@ -11,7 +11,7 @@ exports.Uploader = function(req, res) {
 	if (req.files !== null || req.files !== undefineed) {
 		res.send('File upload successful')
 
-		for (var file = 0; file < req.file.length; file++) {
+		for (var file = 0; file < req.files.length; file++) {
 			var excelObj = xlsx.parse(fs.readFileSync(process.cwd() + '\\' + req.files[file].path))
 
 			for (var index = 0; index < excelObj.length; index++)
