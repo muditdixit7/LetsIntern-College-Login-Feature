@@ -12,7 +12,7 @@ var mongoose = require('mongoose'),
 	publicRoutes = require(process.cwd() + '\\Routes\\PublicRoutes.js'),
 	privateRoutes = require(process.cwd() + '\\Routes\\PrivateRoutes.js');
 
-
+console.log(appConfig.dbUrl)
 mongoose.connect(appConfig.dbUrl)
 exports.db = mongoose.connection
 
@@ -27,10 +27,6 @@ app.use(bodyParser.urlencoded({
 
 app.use('/public', publicRoutes.Router)
 app.use('/private', privateRoutes.Router)
-
-app.get('/', function(req, res) {
-	res.sendFile(path.join(process.cwd() + '\\View\\CollegeLogin.html'))
-})
 
 
 app.all('/private', function() {
@@ -63,8 +59,13 @@ app.all('/private', function() {
 	})
 })
 
+app.get('/', function(req, res) {
+	res.sendFile(path.join(process.cwd() + '\\View\\CollegeLogin.html'))
+})
+
 
 exports.db.on('error', console.error.bind(console, 'connection error:'));
+
 exports.db.once('open', function() {
 
 	var server = app.listen(8086, function(err) {

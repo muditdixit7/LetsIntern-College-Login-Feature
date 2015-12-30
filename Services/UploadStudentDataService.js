@@ -8,26 +8,28 @@ var exports = module.exports = {},
 
 exports.Uploader = function(req, res) {
 
-	if (req.files !== null || req.files !== undefineed)
+	if (req.files !== null || req.files !== undefineed) {
 		res.send('File upload successful')
 
-	for (var file = 0; file < req.file.length; file++) {
-		var excelObj = xlsx.parse(fs.readFileSync(process.cwd() + '\\' + req.files[file].path))
+		for (var file = 0; file < req.file.length; file++) {
+			var excelObj = xlsx.parse(fs.readFileSync(process.cwd() + '\\' + req.files[file].path))
 
-		for (var index = 0; index < excelObj.length; index++)
-			async.forEach(excelObj[index].data, function(data) {
+			for (var index = 0; index < excelObj.length; index++)
+				async.forEach(excelObj[index].data, function(data) {
 
-				if (data[0] === 'Name' || data[1] === 'Email')
-					return
+					if (data[0] === 'Name' || data[1] === 'Email')
+						return
 
-				var student = new schemas.Student({
-					name: data[0],
-					email: data[1],
-					mobileNo: data[2],
-					course: data[3],
-					pursuingYear: data[4]
+					var student = new schemas.Student({
+						name: data[0],
+						email: data[1],
+						mobileNo: data[2],
+						course: data[3],
+						pursuingYear: data[4]
+					})
+					dbInterface.saveStudent(student)
 				})
-				dbInterface.saveStudent(student)
-			})
-	}
+		}
+	} else
+		res.send('File upload unsuccessful ,please try again')
 }
