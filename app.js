@@ -4,6 +4,7 @@ var mongoose = require('mongoose'),
 	path = require('path'),
 	app = express(),
 	Cookies = require('cookies'),
+	jwt = require('jsonwebtoken'),
 	exports = module.exports = {},
 
 
@@ -14,8 +15,6 @@ var mongoose = require('mongoose'),
 
 mongoose.connect(appConfig.dbUrl)
 exports.db = mongoose.connection
-
-
 
 app.set('superSecret', appConfig.secret)
 

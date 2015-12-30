@@ -3,6 +3,8 @@ var exports = module.exports = {},
 	dbInterface = require(process.cwd() + '\\Database\\dbInterface.js'),
 	appConfig = require(process.cwd() + '\\AppConfig.js');
 
+
+
 /*Functoin to register college , create a college object using mongoose and call dbinterface.saveCollege
 function to be saved*/
 exports.registerCollege = function(request, response) {

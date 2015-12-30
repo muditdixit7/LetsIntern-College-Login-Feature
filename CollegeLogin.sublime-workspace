@@ -5,7 +5,7 @@
 		[
 			[
 				"re",
-				"result"
+				"req"
 			],
 			[
 				"s",
@@ -303,29 +303,58 @@
 			"file": "app.js",
 			"settings":
 			{
-				"buffer_size": 1053,
+				"buffer_size": 1696,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "var exports = module.exports = {}\nexports.Router = require('express').Router();\nvar registerService = require(process.cwd() + '\\\\Services\\\\RegisterService.js')\nvar loginService = require(process.cwd() + '\\\\Services\\\\LoginService.js')\n\n\nexports.Router.post('/Registration', registerService.registerCollege)\nexports.Router.post('/Login', loginService.login)",
+			"file": "/C/Users/mdixit/Desktop/resume.json",
+			"settings":
+			{
+				"buffer_size": 4731,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/mdixit/AppData/Roaming/npm/node_modules/resume-cli/index.js",
+			"settings":
+			{
+				"buffer_size": 3046,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/mdixit/AppData/Roaming/npm/node_modules/resume-cli/resume.js",
+			"settings":
+			{
+				"buffer_size": 4571,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<request><type>OrderScheduleChange</type><xml><OrderCorrespondenceData>\n  <AdditionalInformation>\n    <Links>\n      <OrderCorrespondenceData.OrderCorrespondenceLink>\n        <Type>ExploreURL</Type>\n        <URL>https://ultimaterewardspoints.chase.com/travel/explore/categories/</URL>\n      </OrderCorrespondenceData.OrderCorrespondenceLink>\n      <OrderCorrespondenceData.OrderCorrespondenceLink>\n        <Type>TravelPlanURL</Type>\n        <URL>https://ultimaterewardspoints.chase.com/initialize-session?url=https%3a%2f%2fultimaterewardstravel.chase.com%2fSH%2fHandlers%2fReceptionDesk.ashx%3fpage%3dtravelplanlist</URL>\n      </OrderCorrespondenceData.OrderCorrespondenceLink>\n      <OrderCorrespondenceData.OrderCorrespondenceLink>\n        <Type>BaggageURL</Type>\n        <URL>http://www.tripcharges.com/baggagefees.asp?lcid=1033</URL>\n      </OrderCorrespondenceData.OrderCorrespondenceLink>\n      <OrderCorrespondenceData.OrderCorrespondenceLink>\n        <Type>SeatMapURL</Type>\n        <URL>https://ultimaterewardspoints.chase.com/initialize-session?url=https%3a%2f%2fultimaterewardstravel.chase.com%2fSH%2fHandlers%2fReceptionDesk.ashx%3fpage%3dseatmap%26OrdID%3d16443119%26tpi%3d2072724%26tpl%3dQ5KD4NERG</URL>\n      </OrderCorrespondenceData.OrderCorrespondenceLink>\n      <OrderCorrespondenceData.OrderCorrespondenceLink>\n        <Type>TravelPlanDetailURL</Type>\n        <URL>https://ultimaterewardspoints.chase.com/initialize-session?url=https%3a%2f%2fultimaterewardstravel.chase.com%2fSH%2fHandlers%2fReceptionDesk.ashx%3fpage%3dtravelplanDetail%26tpi%3dQ5KD4NERG_2072724</URL>\n      </OrderCorrespondenceData.OrderCorrespondenceLink>\n    </Links>\n    <StateBags />\n  </AdditionalInformation>\n  <CalendarInvites />\n  <ClientConfNumber>10581700</ClientConfNumber>\n  <ClientID>31</ClientID>\n  <Components>\n    <OrderCorrespondenceData.OrderCorrespondenceDataComponent>\n      <ComponentIndex>1</ComponentIndex>\n      <ComponentType>Air</ComponentType>\n      <Details>\n        <AirItinerary>\n          <AdditionalInformation />\n          <AvailableAddons />\n          <Id>e5b31b9e-b3b5-4793-853a-97f4e5100b93</Id>\n          <ItineraryStatus>Booked</ItineraryStatus>\n          <Notes />\n          <PolicyResult />\n          <Rph>0</Rph>\n          <SelectedAddons />\n          <Tags />\n          <AirCancellationPolicy />\n          <AirFareSource>\n            <AccountCodes />\n            <Id>201</Id>\n            <Name>Worldspan</Name>\n          </AirFareSource>\n          <BiasRating>0</BiasRating>\n          <Contract />\n          <Fare>\n            <BaseFare>\n              <Amount>1198.00</Amount>\n              <BaseEquivAmount>0</BaseEquivAmount>\n              <BaseEquivCurrency />\n              <Currency>USD</Currency>\n              <DisplayAmount>1198.0000</DisplayAmount>\n              <DisplayCurrency>USD</DisplayCurrency>\n              <UsdEquivAmount>1198.00</UsdEquivAmount>\n            </BaseFare>\n            <Commissions />\n            <ConsolidatorFee />\n            <Discounts />\n            <EstimatedCommission />\n            <FareCode />\n            <FareRestrictionTypes>\n              <FareRestrictionType>NonRefundableFares</FareRestrictionType>\n            </FareRestrictionTypes>\n            <FareType>Published</FareType>\n            <Fees />\n            <Id>0</Id>\n            <Markup />\n            <Markups />\n            <PartnerFee />\n            <PartnerMarkup />\n            <Remarks />\n            <Rph>0</Rph>\n            <SavingsIncluded />\n            <ServiceFee />\n            <SupplierSideData>\n              <StateBag>\n                <Name>LAPF</Name>\n                <Value>1973.60</Value>\n              </StateBag>\n              <StateBag>\n                <Name>LAPF</Name>\n                <Value>1973.60</Value>\n              </StateBag>\n              <StateBag>\n                <Name>EX_RATE</Name>\n                <Value>1</Value>\n              </StateBag>\n              <StateBag>\n                <Name>Supplier_EX_RATE</Name>\n                <Value>1</Value>\n              </StateBag>\n              <StateBag>\n                <Name>LAPF</Name>\n                <Value>1973.60</Value>\n              </StateBag>\n              <StateBag>\n                <Name>PaymentOptions</Name>\n                <Value>&lt;ArrayOfPaymentOption&gt;\n  &lt;PaymentOption&gt;\n    &lt;AddToFareQuote /&gt;\n    &lt;Attributes /&gt;\n    &lt;ClientPrice /&gt;\n    &lt;CrossOffFareQuote&gt;0.00&lt;/CrossOffFareQuote&gt;\n    &lt;CurrencyOptions&gt;\n      &lt;CurrencyOption&gt;\n        &lt;Currencies&gt;\n          &lt;Currency&gt;\n            &lt;Amount&gt;157888&lt;/Amount&gt;\n            &lt;CrossOffAmount&gt;0&lt;/CrossOffAmount&gt;\n            &lt;DecimalPlaces&gt;0&lt;/DecimalPlaces&gt;\n            &lt;PointCalculationFactor&gt;0.0125000&lt;/PointCalculationFactor&gt;\n            &lt;Type&gt;Points&lt;/Type&gt;\n          &lt;/Currency&gt;\n        &lt;/Currencies&gt;\n      &lt;/CurrencyOption&gt;\n    &lt;/CurrencyOptions&gt;\n    &lt;FareQuote&gt;1973.60&lt;/FareQuote&gt;\n    &lt;FareQuoteAdjustment /&gt;\n    &lt;Fees /&gt;\n    &lt;IncrementAmount /&gt;\n    &lt;IncrementRoundingType&gt;None&lt;/IncrementRoundingType&gt;\n    &lt;IsDeposit&gt;false&lt;/IsDeposit&gt;\n    &lt;MarkupAmount&gt;0.00&lt;/MarkupAmount&gt;\n    &lt;MaxValue /&gt;\n    &lt;ProgramCurrencyMinimum&gt;1.0000&lt;/ProgramCurrencyMinimum&gt;\n    &lt;ProgramCurrencyMinimumTypeDescription&gt;Numeric&lt;/ProgramCurrencyMinimumTypeDescription&gt;\n    &lt;ProgramCurrencyMinimumTypeId&gt;1&lt;/ProgramCurrencyMinimumTypeId&gt;\n    &lt;Rank /&gt;\n    &lt;RewardsAvailable /&gt;\n    &lt;RuleGroupId&gt;2958&lt;/RuleGroupId&gt;\n    &lt;RuleGroupName&gt;Air Redemption &lt;/RuleGroupName&gt;\n    &lt;RuleGroupType&gt;Variable_TieredVariable_LAPF_HybridFTP&lt;/RuleGroupType&gt;\n    &lt;RuleGroupTypeId&gt;1&lt;/RuleGroupTypeId&gt;\n    &lt;ShortfallFactor&gt;0.0125&lt;/ShortfallFactor&gt;\n    &lt;ShortfallFactorTypeDescription&gt;Multiply&lt;/ShortfallFactorTypeDescription&gt;\n    &lt;ShortfallFactorTypeID&gt;2&lt;/ShortfallFactorTypeID&gt;\n  &lt;/PaymentOption&gt;\n  &lt;PaymentOption&gt;\n    &lt;AddToFareQuote /&gt;\n    &lt;Attributes /&gt;\n    &lt;ClientPrice /&gt;\n    &lt;CrossOffFareQuote&gt;0.00&lt;/CrossOffFareQuote&gt;\n    &lt;CurrencyOptions&gt;\n      &lt;CurrencyOption&gt;\n        &lt;Currencies&gt;\n          &lt;Currency&gt;\n            &lt;Amount&gt;1973.6&lt;/Amount&gt;\n            &lt;CrossOffAmount&gt;0&lt;/CrossOffAmount&gt;\n            &lt;DecimalPlaces&gt;0&lt;/DecimalPlaces&gt;\n            &lt;PointCalculationFactor&gt;0&lt;/PointCalculationFactor&gt;\n            &lt;Type&gt;USD&lt;/Type&gt;\n          &lt;/Currency&gt;\n        &lt;/Currencies&gt;\n      &lt;/CurrencyOption&gt;\n    &lt;/CurrencyOptions&gt;\n    &lt;FareQuote&gt;1973.60&lt;/FareQuote&gt;\n    &lt;FareQuoteAdjustment /&gt;\n    &lt;Fees /&gt;\n    &lt;IncrementAmount /&gt;\n    &lt;IncrementRoundingType&gt;None&lt;/IncrementRoundingType&gt;\n    &lt;IsDeposit&gt;false&lt;/IsDeposit&gt;\n    &lt;MarkupAmount&gt;0.00&lt;/MarkupAmount&gt;\n    &lt;MaxValue /&gt;\n    &lt;ProgramCurrencyMinimum /&gt;\n    &lt;ProgramCurrencyMinimumTypeDescription&gt;Numeric&lt;/ProgramCurrencyMinimumTypeDescription&gt;\n    &lt;ProgramCurrencyMinimumTypeId&gt;1&lt;/ProgramCurrencyMinimumTypeId&gt;\n    &lt;Rank /&gt;\n    &lt;RewardsAvailable /&gt;\n    &lt;RuleGroupId&gt;2075&lt;/RuleGroupId&gt;\n    &lt;RuleGroupName&gt;Air Purchase&lt;/RuleGroupName&gt;\n    &lt;RuleGroupType&gt;Purchase&lt;/RuleGroupType&gt;\n    &lt;RuleGroupTypeId&gt;7&lt;/RuleGroupTypeId&gt;\n    &lt;ShortfallFactor /&gt;\n    &lt;ShortfallFactorTypeDescription&gt;Multiply&lt;/ShortfallFactorTypeDescription&gt;\n    &lt;ShortfallFactorTypeID&gt;2&lt;/ShortfallFactorTypeID&gt;\n  &lt;/PaymentOption&gt;\n&lt;/ArrayOfPaymentOption&gt;</Value>\n              </StateBag>\n              <StateBag>\n                <Name>DefaultSortOrder</Name>\n                <Value>0</Value>\n              </StateBag>\n              <StateBag>\n                <Name>Rank</Name>\n                <Value>1</Value>\n              </StateBag>\n              <StateBag>\n                <Name>LAPF</Name>\n                <Value>1973.60</Value>\n              </StateBag>\n              <StateBag>\n                <Name>EX_RATE</Name>\n                <Value>1</Value>\n              </StateBag>\n              <StateBag>\n                <Name>Supplier_EX_RATE</Name>\n                <Value>1</Value>\n              </StateBag>\n              <StateBag>\n                <Name>EX_RATE</Name>\n                <Value>1</Value>\n              </StateBag>\n              <StateBag>\n                <Name>Supplier_EX_RATE</Name>\n                <Value>1</Value>\n              </StateBag>\n              <StateBag>\n                <Name>PO</Name>\n                <Value>N:Air Redemption ++RGI:2958++R:1++T:Variable_TieredVariable_LAPF_HybridFTP++RTI:1++IP:Y++IS:N++PD:PC++UCP:0.00++UPP:157888.00++TCP:3271.64++TPP:54045.00++BCTCP:3271.64++BCUCP:0.00++QE:2++QS:2++RQE:0++RQS:0++CPC:USD++BCPC:USD++PPC:Points++D:Y++E:Y++IFE:Y++AD:Y++IR:++MV:++CP:++DS:Y++SL:2.00++SU:54045.00++SS:1++DSIR:None++SFF:0.0125++SFFT:2++BVR:N++CA:0.00++CFQ:0.00~~N:Air Purchase++RGI:2075++R:2++T:Purchase++RTI:7++IP:N++IS:Y++PD:PC++UCP:1973.60++UPP:0.00++TCP:3947.20++TPP:0.00++BCTCP:3947.20++BCUCP:1973.60++QE:2++QS:2++RQE:0++RQS:0++CPC:USD++BCPC:USD++PPC:Points++D:Y++E:Y++IFE:Y++AD:Y++IR:++MV:++CP:++DS:N++SL:0.00++SU:0.00++SS:1++DSIR:++SFF:0++SFFT:2++BVR:N++CA:0.00++CFQ:0.00</Value>\n              </StateBag>\n              <StateBag>\n                <Name>POFEES</Name>\n                <Value />\n              </StateBag>\n              <StateBag>\n                <Name>PB</Name>\n                <Value>2958++27022.00++337.78++337.78++1635.82++1635.82~~2958++27023.00++337.78++337.78++1635.82++1635.82~~2075++0.00++0.00++0++1973.6++1973.60~~2075++0.00++0.00++0++1973.6++1973.60</Value>\n              </StateBag>\n              <StateBag>\n                <Name>SPB</Name>\n                <Value>2958++27022.00++337.78++337.78++1635.82++1635.82~~2958++27023.00++337.78++337.78++1635.82++1635.82~~2075++0.00++0.00++0++1973.6++1973.60~~2075++0.00++0.00++0++1973.6++1973.60</Value>\n              </StateBag>\n              <StateBag>\n                <Name>SO</Name>\n                <Value>N:Air Purchase++RGI:2075++R:2++T:Purchase++RTI:7++IP:N++IS:N++PD:PC++UCP:1973.60++UPP:0.00++TCP:3947.20++TPP:0.00++BCTCP:3947.20++BCUCP:1973.60++QE:2++QS:2++RQE:0++RQS:0++CPC:USD++BCPC:USD++PPC:Points++D:Y++E:Y++IFE:Y++AD:Y++IR:++MV:++CP:++DS:N++SL:0.00++SU:0.00++SS:1++DSIR:++SFF:0++SFFT:2++BVR:N++CA:0.00++CFQ:0.00</Value>\n              </StateBag>\n              <StateBag>\n                <Name>SOFEES</Name>\n                <Value />\n              </StateBag>\n              <StateBag>\n                <Name>PaymentBreakup</Name>\n                <Value>&lt;SelectedPaymentOptions&gt;\n  &lt;PaymentOption&gt;\n    &lt;RuleGroupId&gt;2075&lt;/RuleGroupId&gt;\n    &lt;RuleGroupType&gt;Purchase&lt;/RuleGroupType&gt;\n    &lt;RuleGroupTypeId&gt;7&lt;/RuleGroupTypeId&gt;\n    &lt;PointsRedeemed&gt;0.00&lt;/PointsRedeemed&gt;\n    &lt;RedemptionCashCost&gt;1973.6&lt;/RedemptionCashCost&gt;\n    &lt;ProgramCurrencyRequired&gt;0.00&lt;/ProgramCurrencyRequired&gt;\n    &lt;ProgramCurrencyLabel&gt;Points&lt;/ProgramCurrencyLabel&gt;\n    &lt;UnitPointsPrice&gt;0.00&lt;/UnitPointsPrice&gt;\n    &lt;MaxValue&gt;0&lt;/MaxValue&gt;\n    &lt;ClientPrice&gt;0&lt;/ClientPrice&gt;\n    &lt;RewardQuantity&gt;0&lt;/RewardQuantity&gt;\n    &lt;Attributes /&gt;\n    &lt;Fees /&gt;\n  &lt;/PaymentOption&gt;\n  &lt;PaymentOption&gt;\n    &lt;RuleGroupId&gt;2075&lt;/RuleGroupId&gt;\n    &lt;RuleGroupType&gt;Purchase&lt;/RuleGroupType&gt;\n    &lt;RuleGroupTypeId&gt;7&lt;/RuleGroupTypeId&gt;\n    &lt;PointsRedeemed&gt;0.00&lt;/PointsRedeemed&gt;\n    &lt;RedemptionCashCost&gt;1973.6&lt;/RedemptionCashCost&gt;\n    &lt;ProgramCurrencyRequired&gt;0.00&lt;/ProgramCurrencyRequired&gt;\n    &lt;ProgramCurrencyLabel&gt;Points&lt;/ProgramCurrencyLabel&gt;\n    &lt;UnitPointsPrice&gt;0.00&lt;/UnitPointsPrice&gt;\n    &lt;MaxValue&gt;0&lt;/MaxValue&gt;\n    &lt;ClientPrice&gt;0&lt;/ClientPrice&gt;\n    &lt;RewardQuantity&gt;0&lt;/RewardQuantity&gt;\n    &lt;Attributes /&gt;\n    &lt;Fees /&gt;\n  &lt;/PaymentOption&gt;\n&lt;/SelectedPaymentOptions&gt;</Value>\n              </StateBag>\n              <StateBag>\n                <Name>PaxPaymentMapping</Name>\n                <Value>P</Value>\n              </StateBag>\n            </SupplierSideData>\n            <Taxes>\n              <Tax>\n                <Amount>775.60</Amount>\n                <BaseEquivAmount>0</BaseEquivAmount>\n                <BaseEquivCurrency />\n                <Currency>USD</Currency>\n                <DisplayAmount>0</DisplayAmount>\n                <DisplayCurrency />\n                <UsdEquivAmount>775.60</UsdEquivAmount>\n                <Code />\n                <Description />\n                <Type />\n              </Tax>\n            </Taxes>\n            <TotalCommission />\n            <TotalDiscount />\n            <TotalFare>\n              <Amount>1973.60</Amount>\n              <BaseEquivAmount>1973.60</BaseEquivAmount>\n              <BaseEquivCurrency>USD</BaseEquivCurrency>\n              <Currency>USD</Currency>\n              <DisplayAmount>1973.6000</DisplayAmount>\n              <DisplayCurrency>USD</DisplayCurrency>\n              <UsdEquivAmount>1973.60</UsdEquivAmount>\n            </TotalFare>\n            <TotalFee>\n              <Amount>0</Amount>\n              <BaseEquivAmount>0</BaseEquivAmount>\n              <BaseEquivCurrency />\n              <Currency>USD</Currency>\n              <DisplayAmount>0</DisplayAmount>\n              <DisplayCurrency />\n              <UsdEquivAmount>0</UsdEquivAmount>\n              <Id>0</Id>\n              <IsRefundable>false</IsRefundable>\n              <OwnerId />\n              <Type />\n            </TotalFee>\n            <TotalTax>\n              <Amount>775.60</Amount>\n              <BaseEquivAmount>775.60</BaseEquivAmount>\n              <BaseEquivCurrency>USD</BaseEquivCurrency>\n              <Currency>USD</Currency>\n              <DisplayAmount>0.0000</DisplayAmount>\n              <DisplayCurrency />\n              <UsdEquivAmount>775.60</UsdEquivAmount>\n            </TotalTax>\n            <LegGroups />\n            <PassengerFares>\n              <PassengerFare>\n                <BaseFare>\n                  <Amount>1198.00</Amount>\n                  <BaseEquivAmount>0</BaseEquivAmount>\n                  <BaseEquivCurrency />\n                  <Currency>USD</Currency>\n                  <DisplayAmount>1198.0000</DisplayAmount>\n                  <DisplayCurrency>USD</DisplayCurrency>\n                  <UsdEquivAmount>1198.00</UsdEquivAmount>\n                </BaseFare>\n                <Commissions />\n                <ConsolidatorFee />\n                <Discounts />\n                <EstimatedCommission />\n                <FareCode />\n                <FareRestrictionTypes>\n                  <FareRestrictionType>NonRefundableFares</FareRestrictionType>\n                </FareRestrictionTypes>\n                <FareType>Published</FareType>\n                <Fees />\n                <Id>0</Id>\n                <Markup />\n                <Markups />\n                <PartnerFee />\n                <PartnerMarkup />\n                <Remarks />\n                <Rph>0</Rph>\n                <SavingsIncluded />\n                <ServiceFee />\n                <SupplierSideData />\n                <Taxes>\n                  <Tax>\n                    <Amount>775.60</Amount>\n                    <BaseEquivAmount>0</BaseEquivAmount>\n                    <BaseEquivCurrency />\n                    <Currency>USD</Currency>\n                    <DisplayAmount>0</DisplayAmount>\n                    <DisplayCurrency />\n                    <UsdEquivAmount>775.60</UsdEquivAmount>\n                    <Code />\n                    <Description />\n                    <Type />\n                  </Tax>\n                </Taxes>\n                <TotalCommission>\n                  <Amount>0</Amount>\n                  <BaseEquivAmount>0</BaseEquivAmount>\n                  <BaseEquivCurrency />\n                  <Currency>USD</Currency>\n                  <DisplayAmount>0</DisplayAmount>\n                  <DisplayCurrency />\n                  <UsdEquivAmount>0</UsdEquivAmount>\n                  <Id>0</Id>\n                  <OwnerId />\n                  <Type />\n                </TotalCommission>\n                <TotalDiscount>\n                  <Amount>0</Amount>\n                  <BaseEquivAmount>0</BaseEquivAmount>\n                  <BaseEquivCurrency />\n                  <Currency>USD</Currency>\n                  <DisplayAmount>0</DisplayAmount>\n                  <DisplayCurrency />\n                  <UsdEquivAmount>0</UsdEquivAmount>\n                  <Id>0</Id>\n                  <OwnerId />\n                  <Type />\n                </TotalDiscount>\n                <TotalFare>\n                  <Amount>1973.60</Amount>\n                  <BaseEquivAmount>1973.60</BaseEquivAmount>\n                  <BaseEquivCurrency>USD</BaseEquivCurrency>\n                  <Currency>USD</Currency>\n                  <DisplayAmount>1973.6000</DisplayAmount>\n                  <DisplayCurrency>USD</DisplayCurrency>\n                  <UsdEquivAmount>1973.60</UsdEquivAmount>\n                </TotalFare>\n                <TotalFee>\n                  <Amount>0</Amount>\n                  <BaseEquivAmount>0</BaseEquivAmount>\n                  <BaseEquivCurrency />\n                  <Currency>USD</Currency>\n                  <DisplayAmount>0</DisplayAmount>\n                  <DisplayCurrency />\n                  <UsdEquivAmount>0</UsdEquivAmount>\n                  <Id>0</Id>\n                  <IsRefundable>false</IsRefundable>\n                  <OwnerId />\n                  <Type />\n                </TotalFee>\n                <TotalTax>\n                  <Amount>775.60</Amount>\n                  <BaseEquivAmount>775.60</BaseEquivAmount>\n                  <BaseEquivCurrency>USD</BaseEquivCurrency>\n                  <Currency>USD</Currency>\n                  <DisplayAmount>0.0000</DisplayAmount>\n                  <DisplayCurrency />\n                  <UsdEquivAmount>775.60</UsdEquivAmount>\n                </TotalTax>\n                <MaxAge>-1</MaxAge>\n                <MinAge>-1</MinAge>\n                <PassengerType>Adult</PassengerType>\n                <Quantity>1</Quantity>\n              </PassengerFare>\n            </PassengerFares>\n          </Fare>\n          <ItineraryType>RoundTrip</ItineraryType>\n          <Legs>\n            <AirLeg>\n              <ContractReferences />\n              <FlightSegments>\n                <FlightSegment>\n                  <AirCraft>\n                    <Code>320</Code>\n                    <Name>AIRBUS INDUSTRIE A320-100/200</Name>\n                  </AirCraft>\n                  <AirlineRecordLocator>ELSBHH</AirlineRecordLocator>\n                  <ArrivalAirport>\n                    <Code>SFO</Code>\n                    <CodeContext>Airport</CodeContext>\n                    <GeoCode>\n                      <Latitude>37.61877</Latitude>\n                      <Longitude>-122.372108</Longitude>\n                    </GeoCode>\n                    <GmtOffsetMinutes>-480</GmtOffsetMinutes>\n                    <Id>0</Id>\n                    <Name>San Francisco International Airport</Name>\n                    <Radius />\n                    <SupplierSideData />\n                    <AirportType>Departure</AirportType>\n                    <City>\n                      <Code>SFO</Code>\n                      <CodeContext>City</CodeContext>\n                      <GeoCode />\n                      <GmtOffsetMinutes>0</GmtOffsetMinutes>\n                      <Id>0</Id>\n                      <Name>San Francisco</Name>\n                      <Radius />\n                      <SupplierSideData />\n                      <Country>US</Country>\n                      <State>CA</State>\n                    </City>\n                  </ArrivalAirport>\n                  <ArrivalDateTime>2016-01-16T16:05:00</ArrivalDateTime>\n                  <CabinClass>Economy</CabinClass>\n                  <DepartureAirport>\n                    <Code>SEA</Code>\n                    <CodeContext>Airport</CodeContext>\n                    <GeoCode>\n                      <Latitude>47.44688</Latitude>\n                      <Longitude>-122.30555</Longitude>\n                    </GeoCode>\n                    <GmtOffsetMinutes>-480</GmtOffsetMinutes>\n                    <Id>0</Id>\n                    <Name>Seattle/Tacoma International Airport</Name>\n                    <Radius />\n                    <SupplierSideData />\n                    <AirportType>Departure</AirportType>\n                    <City>\n                      <Code>SEA</Code>\n                      <CodeContext>City</CodeContext>\n                      <GeoCode />\n                      <GmtOffsetMinutes>0</GmtOffsetMinutes>\n                      <Id>0</Id>\n                      <Name>Seattle</Name>\n                      <Radius />\n                      <SupplierSideData />\n                      <Country>US</Country>\n                      <State>WA</State>\n                    </City>\n                  </DepartureAirport>\n                  <DepartureDateTime>2016-01-16T13:54:00</DepartureDateTime>\n                  <FlightDuration>131</FlightDuration>\n                  <FlightNumber>9745</FlightNumber>\n                  <FlightSegmentStops />\n                  <IsETicket>true</IsETicket>\n                  <IsMarried>false</IsMarried>\n                  <LayoverDuration>0</LayoverDuration>\n                  <MarketingAirline>\n                    <Agency>\n                      <AgencyAddress>\n                        <Code />\n                        <CodeContext>Address</CodeContext>\n                        <GeoCode />\n                        <GmtOffsetMinutes>0</GmtOffsetMinutes>\n                        <Id>0</Id>\n                        <Name />\n                        <Radius />\n                        <SupplierSideData>\n                          <StateBag>\n                            <Name>Website</Name>\n                            <Value>www.airnewzealand.com</Value>\n                          </StateBag>\n                        </SupplierSideData>\n                        <AddressLine1 />\n                        <AddressLine2 />\n                        <AddressScheme />\n                        <City />\n                        <CompleteAddress />\n                        <PhoneNumber>800-262-1234</PhoneNumber>\n                        <ZipCode />\n                      </AgencyAddress>\n                      <AgencyId>0</AgencyId>\n                      <AgencyName />\n                    </Agency>\n                    <Code>NZ</Code>\n                    <CodeContext>Airline</CodeContext>\n                    <DK />\n                    <Department />\n                    <Division />\n                    <FullName>Air New Zealand Limited</FullName>\n                    <ID>0</ID>\n                    <Logo />\n                    <ShortName>Air New Zealand</ShortName>\n                    <IsLowCostCarrier>false</IsLowCostCarrier>\n                  </MarketingAirline>\n                  <MarriageGroupCode />\n                  <MealCode />\n                  <Mileage>\n                    <Amount>679.03</Amount>\n                    <From>Airport</From>\n                    <Unit>mi</Unit>\n                  </Mileage>\n                  <OnTimePercentage>0</OnTimePercentage>\n                  <OnTimePercentageSpecified>false</OnTimePercentageSpecified>\n                  <OperatingAirline>\n                    <Agency />\n                    <Code>**</Code>\n                    <CodeContext>Airline</CodeContext>\n                    <DK />\n                    <Department />\n                    <Division />\n                    <FullName> UNITED AIRLINES UA 816</FullName>\n                    <ID>0</ID>\n                    <Logo />\n                    <ShortName> UNITED AIRLINES UA 816</ShortName>\n                    <IsLowCostCarrier>false</IsLowCostCarrier>\n                  </OperatingAirline>\n                  <PassengerSeat />\n                  <Qualifiers>\n                    <SegmentQualifier>\n                      <BookingModifier />\n                      <FareBasisCode>TWN5</FareBasisCode>\n                      <FareType>Published</FareType>\n                      <LineNumber />\n                      <PassengerType>Adult</PassengerType>\n                      <SegmentRef />\n                      <ServiceClass>T</ServiceClass>\n                    </SegmentQualifier>\n                  </Qualifiers>\n                  <Rph>0</Rph>\n                  <SeatsLeft>0</SeatsLeft>\n                  <SeatsLeftSpecified>false</SeatsLeftSpecified>\n                  <SegmentRef />\n                  <SellStatus>NotApplicable</SellStatus>\n                  <Stops>0</Stops>\n                </FlightSegment>\n                <FlightSegment>\n                  <AirCraft>\n                    <Code>772</Code>\n                    <Name>BOEING 777-200</Name>\n                  </AirCraft>\n                  <AirlineRecordLocator>ELSBHH</AirlineRecordLocator>\n                  <ArrivalAirport>\n                    <Code>AKL</Code>\n                    <CodeContext>Airport</CodeContext>\n                    <GeoCode>\n                      <Latitude>-37.01111</Latitude>\n                      <Longitude>174.798828</Longitude>\n                    </GeoCode>\n                    <GmtOffsetMinutes>720</GmtOffsetMinutes>\n                    <Id>0</Id>\n                    <Name>Auckland International Airport</Name>\n                    <Radius />\n                    <SupplierSideData />\n                    <AirportType>Departure</AirportType>\n                    <City>\n                      <Code>AKL</Code>\n                      <CodeContext>City</CodeContext>\n                      <GeoCode />\n                      <GmtOffsetMinutes>0</GmtOffsetMinutes>\n                      <Id>0</Id>\n                      <Name>Auckland</Name>\n                      <Radius />\n                      <SupplierSideData />\n                      <Country>NZ</Country>\n                      <State />\n                    </City>\n                  </ArrivalAirport>\n                  <ArrivalDateTime>2016-01-18T07:05:00</ArrivalDateTime>\n                  <CabinClass>Economy</CabinClass>\n                  <DepartureAirport>\n                    <Code>SFO</Code>\n                    <CodeContext>Airport</CodeContext>\n                    <GeoCode>\n                      <Latitude>37.61877</Latitude>\n                      <Longitude>-122.372108</Longitude>\n                    </GeoCode>\n                    <GmtOffsetMinutes>-480</GmtOffsetMinutes>\n                    <Id>0</Id>\n                    <Name>San Francisco International Airport</Name>\n                    <Radius />\n                    <SupplierSideData />\n                    <AirportType>Departure</AirportType>\n                    <City>\n                      <Code>SFO</Code>\n                      <CodeContext>City</CodeContext>\n                      <GeoCode />\n                      <GmtOffsetMinutes>0</GmtOffsetMinutes>\n                      <Id>0</Id>\n                      <Name>San Francisco</Name>\n                      <Radius />\n                      <SupplierSideData />\n                      <Country>US</Country>\n                      <State>CA</State>\n                    </City>\n                  </DepartureAirport>\n                  <DepartureDateTime>2016-01-16T21:00:00</DepartureDateTime>\n                  <FlightDuration>785</FlightDuration>\n                  <FlightNumber>15</FlightNumber>\n                  <FlightSegmentStops />\n                  <IsETicket>true</IsETicket>\n                  <IsMarried>false</IsMarried>\n                  <LayoverDuration>0</LayoverDuration>\n                  <MarketingAirline>\n                    <Agency>\n                      <AgencyAddress>\n                        <Code />\n                        <CodeContext>Address</CodeContext>\n                        <GeoCode />\n                        <GmtOffsetMinutes>0</GmtOffsetMinutes>\n                        <Id>0</Id>\n                        <Name />\n                        <Radius />\n                        <SupplierSideData>\n                          <StateBag>\n                            <Name>Website</Name>\n                            <Value>www.airnewzealand.com</Value>\n                          </StateBag>\n                        </SupplierSideData>\n                        <AddressLine1 />\n                        <AddressLine2 />\n                        <AddressScheme />\n                        <City />\n                        <CompleteAddress />\n                        <PhoneNumber>800-262-1234</PhoneNumber>\n                        <ZipCode />\n                      </AgencyAddress>\n                      <AgencyId>0</AgencyId>\n                      <AgencyName />\n                    </Agency>\n                    <Code>NZ</Code>\n                    <CodeContext>Airline</CodeContext>\n                    <DK />\n                    <Department />\n                    <Division />\n                    <FullName>Air New Zealand Limited</FullName>\n                    <ID>0</ID>\n                    <Logo />\n                    <ShortName>Air New Zealand</ShortName>\n                    <IsLowCostCarrier>false</IsLowCostCarrier>\n                  </MarketingAirline>\n                  <MarriageGroupCode />\n                  <MealCode />\n                  <Mileage>\n                    <Amount>6529.63</Amount>\n                    <From>Airport</From>\n                    <Unit>mi</Unit>\n                  </Mileage>\n                  <OnTimePercentage>0</OnTimePercentage>\n                  <OnTimePercentageSpecified>false</OnTimePercentageSpecified>\n                  <OperatingAirline>\n                    <Agency>\n                      <AgencyAddress>\n                        <Code />\n                        <CodeContext>Address</CodeContext>\n                        <GeoCode />\n                        <GmtOffsetMinutes>0</GmtOffsetMinutes>\n                        <Id>0</Id>\n                        <Name />\n                        <Radius />\n                        <SupplierSideData>\n                          <StateBag>\n                            <Name>Website</Name>\n                            <Value>www.airnewzealand.com</Value>\n                          </StateBag>\n                        </SupplierSideData>\n                        <AddressLine1 />\n                        <AddressLine2 />\n                        <AddressScheme />\n                        <City />\n                        <CompleteAddress />\n                        <PhoneNumber>800-262-1234</PhoneNumber>\n                        <ZipCode />\n                      </AgencyAddress>\n                      <AgencyId>0</AgencyId>\n                      <AgencyName />\n                    </Agency>\n                    <Code>NZ</Code>\n                    <CodeContext>Airline</CodeContext>\n                    <DK />\n                    <Department />\n                    <Division />\n                    <FullName>Air New Zealand Limited</FullName>\n                    <ID>0</ID>\n                    <Logo />\n                    <ShortName>Air New Zealand</ShortName>\n                    <IsLowCostCarrier>false</IsLowCostCarrier>\n                  </OperatingAirline>\n                  <PassengerSeat />\n                  <Qualifiers>\n                    <SegmentQualifier>\n                      <BookingModifier />\n                      <FareBasisCode>TWN5</FareBasisCode>\n                      <FareType>Published</FareType>\n                      <LineNumber />\n                      <PassengerType>Adult</PassengerType>\n                      <SegmentRef />\n                      <ServiceClass>T</ServiceClass>\n                    </SegmentQualifier>\n                  </Qualifiers>\n                  <Rph>1</Rph>\n                  <SeatsLeft>0</SeatsLeft>\n                  <SeatsLeftSpecified>false</SeatsLeftSpecified>\n                  <SegmentRef />\n                  <SellStatus>NotApplicable</SellStatus>\n                  <Stops>0</Stops>\n                </FlightSegment>\n              </FlightSegments>\n              <LegDuration>0</LegDuration>\n              <Mileage>\n                <Amount>7208.66</Amount>\n                <From>Airport</From>\n                <Unit>mi</Unit>\n              </Mileage>\n              <RateCodeInfo />\n              <Rph>0</Rph>\n              <ScopeId>0</ScopeId>\n              <StopDetails>\n                <FlightSegmentStop>\n                  <AirCraft />\n                  <Airport>\n                    <Code>SFO</Code>\n                    <CodeContext>Airport</CodeContext>\n                    <GeoCode>\n                      <Latitude>37.61877</Latitude>\n                      <Longitude>-122.372108</Longitude>\n                    </GeoCode>\n                    <GmtOffsetMinutes>-480</GmtOffsetMinutes>\n                    <Id>0</Id>\n                    <Name>San Francisco International Airport</Name>\n                    <Radius />\n                    <SupplierSideData />\n                    <AirportType>Departure</AirportType>\n                    <City>\n                      <Code>SFO</Code>\n                      <CodeContext>City</CodeContext>\n                      <GeoCode />\n                      <GmtOffsetMinutes>0</GmtOffsetMinutes>\n                      <Id>0</Id>\n                      <Name>San Francisco</Name>\n                      <Radius />\n                      <SupplierSideData />\n                      <Country>US</Country>\n                      <State>CA</State>\n                    </City>\n                  </Airport>\n                  <ArrivalDateTime>0001-01-01T00:00:00</ArrivalDateTime>\n                  <ArrivalTerminal />\n                  <DepartureDateTime>0001-01-01T00:00:00</DepartureDateTime>\n                  <DepartureTerminal />\n                  <Duration>295</Duration>\n                  <FlightDuration>0</FlightDuration>\n                  <Rph>0</Rph>\n                </FlightSegmentStop>\n              </StopDetails>\n              <Stops>1</Stops>\n              <SupplierSideData />\n            </AirLeg>\n            <AirLeg>\n              <ContractReferences />\n              <FlightSegments>\n                <FlightSegment>\n                  <AirCraft>\n                    <Code>CRJ</Code>\n                    <Name>Canadair Regional Jet</Name>\n                  </AirCraft>\n                  <AirlineRecordLocator>GZMV9D</AirlineRecordLocator>\n                  <ArrivalAirport>\n                    <Code>SEA</Code>\n                    <CodeContext>Airport</CodeContext>\n                    <GeoCode>\n                      <Latitude>47.44688</Latitude>\n                      <Longitude>-122.30555</Longitude>\n                    </GeoCode>\n                    <GmtOffsetMinutes>-480</GmtOffsetMinutes>\n                    <Id>0</Id>\n                    <Name>Seattle/Tacoma International Airport</Name>\n                    <Radius />\n                    <SupplierSideData />\n                    <AirportType>Departure</AirportType>\n                    <City>\n                      <Code>SEA</Code>\n                      <CodeContext>City</CodeContext>\n                      <GeoCode />\n                      <GmtOffsetMinutes>0</GmtOffsetMinutes>\n                      <Id>0</Id>\n                      <Name>Seattle</Name>\n                      <Radius />\n                      <SupplierSideData />\n                      <Country>US</Country>\n                      <State>WA</State>\n                    </City>\n                  </ArrivalAirport>\n                  <ArrivalDateTime>2016-01-30T17:58:00</ArrivalDateTime>\n                  <CabinClass>Economy</CabinClass>\n                  <DepartureAirport>\n                    <Code>SFO</Code>\n                    <CodeContext>Airport</CodeContext>\n                    <GeoCode>\n                      <Latitude>37.61877</Latitude>\n                      <Longitude>-122.372108</Longitude>\n                    </GeoCode>\n                    <GmtOffsetMinutes>-480</GmtOffsetMinutes>\n                    <Id>0</Id>\n                    <Name>San Francisco International Airport</Name>\n                    <Radius />\n                    <SupplierSideData />\n                    <AirportType>Departure</AirportType>\n                    <City>\n                      <Code>SFO</Code>\n                      <CodeContext>City</CodeContext>\n                      <GeoCode />\n                      <GmtOffsetMinutes>0</GmtOffsetMinutes>\n                      <Id>0</Id>\n                      <Name>San Francisco</Name>\n                      <Radius />\n                      <SupplierSideData />\n                      <Country>US</Country>\n                      <State>CA</State>\n                    </City>\n                  </DepartureAirport>\n                  <DepartureDateTime>2016-01-30T15:41:00</DepartureDateTime>\n                  <FlightDuration>137</FlightDuration>\n                  <FlightNumber>6514</FlightNumber>\n                  <FlightSegmentStops />\n                  <IsETicket>true</IsETicket>\n                  <IsMarried>false</IsMarried>\n                  <LayoverDuration>0</LayoverDuration>\n                  <MarketingAirline>\n                    <Agency>\n                      <AgencyAddress>\n                        <Code />\n                        <CodeContext>Address</CodeContext>\n                        <GeoCode />\n                        <GmtOffsetMinutes>0</GmtOffsetMinutes>\n                        <Id>0</Id>\n                        <Name />\n                        <Radius />\n                        <SupplierSideData>\n                          <StateBag>\n                            <Name>Website</Name>\n                            <Value>www.united.com</Value>\n                          </StateBag>\n                        </SupplierSideData>\n                        <AddressLine1 />\n                        <AddressLine2 />\n                        <AddressScheme />\n                        <City />\n                        <CompleteAddress />\n                        <PhoneNumber>800-241-6522</PhoneNumber>\n                        <ZipCode />\n                      </AgencyAddress>\n                      <AgencyId>0</AgencyId>\n                      <AgencyName />\n                    </Agency>\n                    <Code>UA</Code>\n                    <CodeContext>Airline</CodeContext>\n                    <DK />\n                    <Department />\n                    <Division />\n                    <FullName>United Airlines, Inc.</FullName>\n                    <ID>0</ID>\n                    <Logo />\n                    <ShortName>United Airlines</ShortName>\n                    <IsLowCostCarrier>false</IsLowCostCarrier>\n                  </MarketingAirline>\n                  <MarriageGroupCode />\n                  <MealCode />\n                  <Mileage>\n                    <Amount>679.03</Amount>\n                    <From>Airport</From>\n                    <Unit>mi</Unit>\n                  </Mileage>\n                  <OnTimePercentage>0</OnTimePercentage>\n                  <OnTimePercentageSpecified>false</OnTimePercentageSpecified>\n                  <OperatingAirline>\n                    <Agency />\n                    <Code>**</Code>\n                    <CodeContext>Airline</CodeContext>\n                    <DK />\n                    <Department />\n                    <Division />\n                    <FullName> /SKYWEST DBA UNITED EXPRESS</FullName>\n                    <ID>0</ID>\n                    <Logo />\n                    <ShortName> /SKYWEST DBA UNITED EXPRESS</ShortName>\n                    <IsLowCostCarrier>false</IsLowCostCarrier>\n                  </OperatingAirline>\n                  <PassengerSeat />\n                  <Qualifiers>\n                    <SegmentQualifier>\n                      <BookingModifier />\n                      <FareBasisCode>SWN5</FareBasisCode>\n                      <FareType>Published</FareType>\n                      <LineNumber />\n                      <PassengerType>Adult</PassengerType>\n                      <SegmentRef />\n                      <ServiceClass>S</ServiceClass>\n                    </SegmentQualifier>\n                  </Qualifiers>\n                  <Rph>0</Rph>\n                  <SeatsLeft>0</SeatsLeft>\n                  <SeatsLeftSpecified>false</SeatsLeftSpecified>\n                  <SegmentRef />\n                  <SellStatus>NotApplicable</SellStatus>\n                  <Stops>0</Stops>\n                </FlightSegment>\n                <FlightSegment>\n                  <AirCraft>\n                    <Code>773</Code>\n                    <Name>BOEING 777-300</Name>\n                  </AirCraft>\n                  <AirlineRecordLocator>ELSBHH</AirlineRecordLocator>\n                  <ArrivalAirport>\n                    <Code>SFO</Code>\n                    <CodeContext>Airport</CodeContext>\n                    <GeoCode>\n                      <Latitude>37.61877</Latitude>\n                      <Longitude>-122.372108</Longitude>\n                    </GeoCode>\n                    <GmtOffsetMinutes>-480</GmtOffsetMinutes>\n                    <Id>0</Id>\n                    <Name>San Francisco International Airport</Name>\n                    <Radius />\n                    <SupplierSideData />\n                    <AirportType>Departure</AirportType>\n                    <City>\n                      <Code>SFO</Code>\n                      <CodeContext>City</CodeContext>\n                      <GeoCode />\n                      <GmtOffsetMinutes>0</GmtOffsetMinutes>\n                      <Id>0</Id>\n                      <Name>San Francisco</Name>\n                      <Radius />\n                      <SupplierSideData />\n                      <Country>US</Country>\n                      <State>CA</State>\n                    </City>\n                  </ArrivalAirport>\n                  <ArrivalDateTime>2016-01-30T11:05:00</ArrivalDateTime>\n                  <CabinClass>Economy</CabinClass>\n                  <DepartureAirport>\n                    <Code>AKL</Code>\n                    <CodeContext>Airport</CodeContext>\n                    <GeoCode>\n                      <Latitude>-37.01111</Latitude>\n                      <Longitude>174.798828</Longitude>\n                    </GeoCode>\n                    <GmtOffsetMinutes>720</GmtOffsetMinutes>\n                    <Id>0</Id>\n                    <Name>Auckland International Airport</Name>\n                    <Radius />\n                    <SupplierSideData />\n                    <AirportType>Departure</AirportType>\n                    <City>\n                      <Code>AKL</Code>\n                      <CodeContext>City</CodeContext>\n                      <GeoCode />\n                      <GmtOffsetMinutes>0</GmtOffsetMinutes>\n                      <Id>0</Id>\n                      <Name>Auckland</Name>\n                      <Radius />\n                      <SupplierSideData />\n                      <Country>NZ</Country>\n                      <State />\n                    </City>\n                  </DepartureAirport>\n                  <DepartureDateTime>2016-01-30T19:45:00</DepartureDateTime>\n                  <FlightDuration>740</FlightDuration>\n                  <FlightNumber>8</FlightNumber>\n                  <FlightSegmentStops />\n                  <IsETicket>true</IsETicket>\n                  <IsMarried>false</IsMarried>\n                  <LayoverDuration>0</LayoverDuration>\n                  <MarketingAirline>\n                    <Agency>\n                      <AgencyAddress>\n                        <Code />\n                        <CodeContext>Address</CodeContext>\n                        <GeoCode />\n                        <GmtOffsetMinutes>0</GmtOffsetMinutes>\n                        <Id>0</Id>\n                        <Name />\n                        <Radius />\n                        <SupplierSideData>\n                          <StateBag>\n                            <Name>Website</Name>\n                            <Value>www.airnewzealand.com</Value>\n                          </StateBag>\n                        </SupplierSideData>\n                        <AddressLine1 />\n                        <AddressLine2 />\n                        <AddressScheme />\n                        <City />\n                        <CompleteAddress />\n                        <PhoneNumber>800-262-1234</PhoneNumber>\n                        <ZipCode />\n                      </AgencyAddress>\n                      <AgencyId>0</AgencyId>\n                      <AgencyName />\n                    </Agency>\n                    <Code>NZ</Code>\n                    <CodeContext>Airline</CodeContext>\n                    <DK />\n                    <Department />\n                    <Division />\n                    <FullName>Air New Zealand Limited</FullName>\n                    <ID>0</ID>\n                    <Logo />\n                    <ShortName>Air New Zealand</ShortName>\n                    <IsLowCostCarrier>false</IsLowCostCarrier>\n                  </MarketingAirline>\n                  <MarriageGroupCode />\n                  <MealCode />\n                  <Mileage>\n                    <Amount>6529.63</Amount>\n                    <From>Airport</From>\n                    <Unit>mi</Unit>\n                  </Mileage>\n                  <OnTimePercentage>0</OnTimePercentage>\n                  <OnTimePercentageSpecified>false</OnTimePercentageSpecified>\n                  <OperatingAirline>\n                    <Agency>\n                      <AgencyAddress>\n                        <Code />\n                        <CodeContext>Address</CodeContext>\n                        <GeoCode />\n                        <GmtOffsetMinutes>0</GmtOffsetMinutes>\n                        <Id>0</Id>\n                        <Name />\n                        <Radius />\n                        <SupplierSideData>\n                          <StateBag>\n                            <Name>Website</Name>\n                            <Value>www.airnewzealand.com</Value>\n                          </StateBag>\n                        </SupplierSideData>\n                        <AddressLine1 />\n                        <AddressLine2 />\n                        <AddressScheme />\n                        <City />\n                        <CompleteAddress />\n                        <PhoneNumber>800-262-1234</PhoneNumber>\n                        <ZipCode />\n                      </AgencyAddress>\n                      <AgencyId>0</AgencyId>\n                      <AgencyName />\n                    </Agency>\n                    <Code>NZ</Code>\n                    <CodeContext>Airline</CodeContext>\n                    <DK />\n                    <Department />\n                    <Division />\n                    <FullName>Air New Zealand Limited</FullName>\n                    <ID>0</ID>\n                    <Logo />\n                    <ShortName>Air New Zealand</ShortName>\n                    <IsLowCostCarrier>false</IsLowCostCarrier>\n                  </OperatingAirline>\n                  <PassengerSeat />\n                  <Qualifiers>\n                    <SegmentQualifier>\n                      <BookingModifier />\n                      <FareBasisCode>SWN5</FareBasisCode>\n                      <FareType>Published</FareType>\n                      <LineNumber />\n                      <PassengerType>Adult</PassengerType>\n                      <SegmentRef />\n                      <ServiceClass>S</ServiceClass>\n                    </SegmentQualifier>\n                  </Qualifiers>\n                  <Rph>1</Rph>\n                  <SeatsLeft>0</SeatsLeft>\n                  <SeatsLeftSpecified>false</SeatsLeftSpecified>\n                  <SegmentRef />\n                  <SellStatus>NotApplicable</SellStatus>\n                  <Stops>0</Stops>\n                </FlightSegment>\n              </FlightSegments>\n              <LegDuration>0</LegDuration>\n              <Mileage>\n                <Amount>7208.66</Amount>\n                <From>Airport</From>\n                <Unit>mi</Unit>\n              </Mileage>\n              <RateCodeInfo />\n              <Rph>1</Rph>\n              <ScopeId>0</ScopeId>\n              <StopDetails>\n                <FlightSegmentStop>\n                  <AirCraft />\n                  <Airport>\n                    <Code>SEA</Code>\n                    <CodeContext>Airport</CodeContext>\n                    <GeoCode>\n                      <Latitude>47.44688</Latitude>\n                      <Longitude>-122.30555</Longitude>\n                    </GeoCode>\n                    <GmtOffsetMinutes>-480</GmtOffsetMinutes>\n                    <Id>0</Id>\n                    <Name>Seattle/Tacoma International Airport</Name>\n                    <Radius />\n                    <SupplierSideData />\n                    <AirportType>Departure</AirportType>\n                    <City>\n                      <Code>SEA</Code>\n                      <CodeContext>City</CodeContext>\n                      <GeoCode />\n                      <GmtOffsetMinutes>0</GmtOffsetMinutes>\n                      <Id>0</Id>\n                      <Name>Seattle</Name>\n                      <Radius />\n                      <SupplierSideData />\n                      <Country>US</Country>\n                      <State>WA</State>\n                    </City>\n                  </Airport>\n                  <ArrivalDateTime>0001-01-01T00:00:00</ArrivalDateTime>\n                  <ArrivalTerminal />\n                  <DepartureDateTime>0001-01-01T00:00:00</DepartureDateTime>\n                  <DepartureTerminal />\n                  <Duration>107</Duration>\n                  <FlightDuration>0</FlightDuration>\n                  <Rph>0</Rph>\n                </FlightSegmentStop>\n              </StopDetails>\n              <Stops>1</Stops>\n              <SupplierSideData />\n            </AirLeg>\n          </Legs>\n          <MarkupPlan />\n          <Policies>\n            <AirPolicy>\n              <Rph>0</Rph>\n              <Text>BG1:150.00 USD UPTO70LB/32KG AND UPTO62LI/158LCM                    !@#$%^BG2:150.00 USD UPTO50LB/23KG AND UPTO62LI/158LCM                    !@#$%^CRY:CARRY ON DATA NOT AVAILABLE                                     !@#$%^URL:MYTRIPANDMORE.COM/BAGGAGEDETAILSNZ.BAGG                         </Text>\n              <Type>vendor|hide|Baggage</Type>\n            </AirPolicy>\n            <AirPolicy>\n              <Rph>0</Rph>\n              <Text>Carry-on baggage restrictions will apply. Your selected airline's baggage fees will apply.  Airlines may charge additional fees for miscellaneous services such as advance seat selection, food and beverage. Fees vary by airline so you must contact the airline directly or check their web site for up to date information and pricing details.</Text>\n              <Type>blanket|show|</Type>\n            </AirPolicy>\n            <AirPolicy>\n              <Rph>0</Rph>\n              <Text>Tickets are non-transferable and most fares are non-refundable. Changes or cancellations must be made by calling us at 1-866-951-6592. Changes to your itinerary may result in a fare adjustment and will incur a per ticket airline change fee.</Text>\n              <Type>blanket|show|</Type>\n            </AirPolicy>\n            <AirPolicy>\n              <Rph>0</Rph>\n              <Text>A small number of air carriers may require us to confirm flight availability when booking.  If there is any issue with availability, a travel representative will contact you within 24 hours to make alternate flight arrangements at no additional cost.</Text>\n              <Type>blanket|show|</Type>\n            </AirPolicy>\n            <AirPolicy>\n              <Rph>0</Rph>\n              <Text>Government-issued photo identification is required at check-in and must match the name on the reservation.  If this is an international flight, this reservation requires a passport and may require a visa and satisfaction of health requirements. Please contact the consulate of the destination country for current visa/passport and other entry requirements.</Text>\n              <Type>blanket|show|</Type>\n            </AirPolicy>\n            <AirPolicy>\n              <Rph>0</Rph>\n              <Text>Please refer to the &lt;a href=\"https://ultimaterewardstravel.chase.com/terms\" target=\"_blank\" style=\"color: #339ce6; font-weight: bold; text-decoration: none;\"&gt;Travel Disclosures&lt;/a&gt; for more information.</Text>\n              <Type>blanket|show|</Type>\n            </AirPolicy>\n            <AirPolicy>\n              <Rph>0</Rph>\n              <Text>BG1:150.00 USD UPTO70LB/32KG AND UPTO62LI/158LCM                    !@#$%^BG2:150.00 USD UPTO50LB/23KG AND UPTO62LI/158LCM                    !@#$%^CRY:CARRY ON DATA NOT AVAILABLE                                     !@#$%^URL:MYTRIPANDMORE.COM/BAGGAGEDETAILSNZ.BAGG                         </Text>\n              <Type>vendor|hide|Baggage</Type>\n            </AirPolicy>\n          </Policies>\n          <SupplierSideData>\n            <StateBag>\n              <Name>OperatingAirlineTicketable</Name>\n              <Value>1</Value>\n            </StateBag>\n            <StateBag>\n              <Name>SID</Name>\n              <Value>6TC</Value>\n            </StateBag>\n            <StateBag>\n              <Name>IATANumber</Name>\n              <Value>13527231</Value>\n            </StateBag>\n          </SupplierSideData>\n          <TicketingInfo />\n        </AirItinerary>\n      </Details>\n      <Insurance />\n      <PassengerIndex>0</PassengerIndex>\n      <Payments>\n        <OrderCorrespondenceData.OrderCorrespondenceDataPayment>\n          <Amount>0.00</Amount>\n          <CashCost>1973.6</CashCost>\n          <CurrencyPrefix />\n          <CurrencyType>Points</CurrencyType>\n          <Description>Air Purchase</Description>\n          <FeeCashAmount>0</FeeCashAmount>\n          <FeePointAmount>0</FeePointAmount>\n          <PointCashValue>0</PointCashValue>\n        </OrderCorrespondenceData.OrderCorrespondenceDataPayment>\n      </Payments>\n      <SearchCriteria />\n      <Specials />\n      <SupplierConfirmationNumber>N4PNL7</SupplierConfirmationNumber>\n      <VendorConfirmationNumber>2Y4AIN</VendorConfirmationNumber>\n    </OrderCorrespondenceData.OrderCorrespondenceDataComponent>\n  </Components>\n  <CorrespondenceType>OrderScheduleChange</CorrespondenceType>\n  <CountryCurrencyConversions />\n  <CreateDateTime>2015-08-10T13:43:37.12</CreateDateTime>\n  <CreatedBy>njflaiz</CreatedBy>\n  <CreditCard>\n    <Amount>3947.20</Amount>\n    <CardType>Personal</CardType>\n    <Code />\n    <CurrencyType>USD</CurrencyType>\n    <Name />\n    <NameOnCard>CELINE RAMONI</NameOnCard>\n    <Number>XXXXXXXXXXXX3859</Number>\n    <PaymentType>Credit</PaymentType>\n  </CreditCard>\n  <Currency>USD</Currency>\n  <CurrencyConversions />\n  <Destination />\n  <ElectricalCurrent />\n  <ElectricalCurrents />\n  <EmailDetails>\n    <BCC>qburstconfirmations@cxloyalty.com</BCC>\n    <Body />\n    <From>donotreply@travelemail.res12.com</From>\n    <SenderName />\n    <Subject><![CDATA[URGENT – Your Flight Schedule Has Changed for Chase Ultimate Rewards Travel Trip ID: 16443119]]></Subject>\n    <To>celine.ramoni@gmail.com</To>\n  </EmailDetails>\n  <HTMLMessage><![CDATA[]]></HTMLMessage>\n  <ImageURL>https://images.orxenterprise.com/images/</ImageURL>\n  <LanguageCode>en-US</LanguageCode>\n  <Locator>16443119</Locator>\n  <Logos>\n    <OrderCorrespondenceData.OrderCorrespondenceDataLogo>\n      <Location>Zone1</Location>\n      <URL>http://www.orxrdr.com/ReceptionGateway/DbImageHandler.ashx?ImageType=7&amp;ClientID=31&amp;ClientProgramGroupID=42</URL>\n    </OrderCorrespondenceData.OrderCorrespondenceDataLogo>\n  </Logos>\n  <Maps />\n  <OrderPromotions />\n  <OrderStatus>Complete</OrderStatus>\n  <Participant>\n    <Email>celine.ramoni@gmail.com</Email>\n    <FirstName><![CDATA[CELINE]]></FirstName>\n    <ID>5182587920684599</ID>\n    <Last4 />\n    <LastName><![CDATA[RAMONI]]></LastName>\n  </Participant>\n  <PassCode />\n  <Passengers>\n    <OrderCorrespondenceData.OrderCorrespondenceDataPassenger>\n      <ComponentIndex>0</ComponentIndex>\n      <Email>celine.ramoni@gmail.com</Email>\n      <FirstName>Celine</FirstName>\n      <Index>0</Index>\n      <LastName>Ramoni</LastName>\n      <MiddleName>LyviaMarie</MiddleName>\n      <PassengerType>Adult</PassengerType>\n      <PhoneNumber />\n      <Prefix />\n      <SeatRequests />\n      <Suffix />\n      <Title />\n    </OrderCorrespondenceData.OrderCorrespondenceDataPassenger>\n    <OrderCorrespondenceData.OrderCorrespondenceDataPassenger>\n      <ComponentIndex>0</ComponentIndex>\n      <Email>celine.ramoni@gmail.com</Email>\n      <FirstName>Sang</FirstName>\n      <Index>1</Index>\n      <LastName>Lee</LastName>\n      <MiddleName>Myong</MiddleName>\n      <PassengerType>Adult</PassengerType>\n      <PhoneNumber />\n      <Prefix />\n      <SeatRequests />\n      <Suffix />\n      <Title />\n    </OrderCorrespondenceData.OrderCorrespondenceDataPassenger>\n  </Passengers>\n  <Program>\n    <ClientProgramGroupID>42</ClientProgramGroupID>\n    <CurrencyDescription />\n    <DisplayName><![CDATA[Chase Ultimate Rewards]]></DisplayName>\n    <ID>382</ID>\n    <InternationalPhone />\n    <Phone>1-866-951-6592</Phone>\n    <Type>Redemption</Type>\n  </Program>\n  <Provider>ORXe</Provider>\n  <ReturnURL><![CDATA[http://www.ultimaterewards.com]]></ReturnURL>\n  <SDBClientId>3142</SDBClientId>\n  <ScheduleChangeType>AirlineInitiated</ScheduleChangeType>\n  <SeatSelectionAvailable>true</SeatSelectionAvailable>\n  <ShowConfirmationSuccess>false</ShowConfirmationSuccess>\n  <TemplateID>HJN6YV5BVGs=</TemplateID>\n  <TermsAndConditions>\n    <Text />\n    <URL>https://ultimaterewardstravel.chase.comTerms?print=mailTerms?print=mail&amp;LCID=1033</URL>\n  </TermsAndConditions>\n  <ThemeCode>JPMCUltimateRewards</ThemeCode>\n  <TimeZoneLegs />\n  <TimeZones />\n  <TransactionGroupID><![CDATA[JfBj3PniCrI=]]></TransactionGroupID>\n  <TransitCode />\n  <TravelPlan>\n    <Id>2072724</Id>\n    <Locator>Q5KD4NERG</Locator>\n    <Name>Honeymoon</Name>\n    <Notes />\n    <TravelPlanItems />\n  </TravelPlan>\n  <UpdateDateTime>2015-11-02T13:39:26.8210059-05:00</UpdateDateTime>\n  <UpdatedBy />\n  <Upsell>\n    <City>Auckland</City>\n    <Country>NZ</Country>\n    <ErrorMessages />\n    <Links>\n      <OrderCorrespondenceData.OrderCorrespondenceLink>\n        <Type>CarUpsell</Type>\n        <URL>https://ultimaterewardspoints.chase.com/initialize-session?url=https%3a%2f%2fultimaterewardstravel.chase.com%2fSH%2fHandlers%2fReceptionDesk.ashx%3fpage%3dresultscar%26verb%3dsearch%26picLoc%3dAKL%26drpLoc%3dAKL%26picDt%3d1%2f16%2f2016%26drpDt%3d1%2f30%2f2016%26picTime%3d1300%26drpTime%3d1300</URL>\n      </OrderCorrespondenceData.OrderCorrespondenceLink>\n      <OrderCorrespondenceData.OrderCorrespondenceLink>\n        <Type>ActivityUpsell</Type>\n        <URL>https://ultimaterewardspoints.chase.com/initialize-session?url=https%3a%2f%2fultimaterewardstravel.chase.com%2fSH%2fHandlers%2fReceptionDesk.ashx%3fpage%3dresultsactivity%26verb%3dsearch%26loc%3dAKL%26sDate%3d1%2f16%2f2016%26eDate%3d1%2f30%2f2016</URL>\n      </OrderCorrespondenceData.OrderCorrespondenceLink>\n      <OrderCorrespondenceData.OrderCorrespondenceLink>\n        <Type>HotelUpsell</Type>\n        <URL>https://ultimaterewardspoints.chase.com/initialize-session?url=https%3a%2f%2fultimaterewardstravel.chase.com%2fSH%2fHandlers%2fReceptionDesk.ashx%3fpage%3dresultshotel%26verb%3dsearch%26locNm%3dAKL%26cinDate%3d1%2f16%2f2016%26coutDate%3d1%2f30%2f2016%26adtCnt%3d1</URL>\n      </OrderCorrespondenceData.OrderCorrespondenceLink>\n    </Links>\n    <State />\n    <UpsellComponents />\n  </Upsell>\n  <Weather />\n</OrderCorrespondenceData></xml></request>",
+			"file": "/C/Users/mdixit/AppData/Local/Temp/SchedChangeEmail_16443119-1.txt",
+			"file_size": 61308,
+			"file_write_time": 130958611271147766,
+			"settings":
+			{
+				"buffer_size": 59920,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "Routes/PublicRoutes.js",
-			"file_size": 362,
-			"file_write_time": 130950218956236314,
 			"settings":
 			{
-				"buffer_size": 355,
+				"buffer_size": 351,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "var exports = module.exports = {}\nexports.Router = require('express').Router();\nvar Cookies = require('cookies')\n\nexports.Router.use(function(req, res, next) {\n	if (!req.decoded) {\n		var cookies = new Cookies(req, res)\n		var token = cookies.get('authentication_token')\n		if (token) {\n			jwt.verify(token, appConfig.secret, function(err, decoded) {\n				if (err) {\n					res.json({\n						success: false,\n						message: 'Authentication failed'\n					})\n					res.end()\n				} else {\n					req.decoded = decoded\n					next()\n				}\n			})\n		} else {\n			res.json({\n				success: false,\n				message: 'Authentication failed'\n			})\n			res.end()\n		}\n	}\n})",
 			"file": "Routes/PrivateRoutes.js",
-			"file_size": 666,
-			"file_write_time": 130950232567904856,
 			"settings":
 			{
-				"buffer_size": 637,
+				"buffer_size": 321,
 				"line_ending": "Windows"
 			}
 		},
@@ -333,7 +362,7 @@
 			"file": "AppConfig.js",
 			"settings":
 			{
-				"buffer_size": 155,
+				"buffer_size": 123,
 				"line_ending": "Windows"
 			}
 		},
@@ -341,12 +370,12 @@
 			"file": "Database/UserSchemas.js",
 			"settings":
 			{
-				"buffer_size": 664,
+				"buffer_size": 522,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Services/RegisterService.js",
+			"file": "Database/dbInterface.js",
 			"settings":
 			{
 				"buffer_size": 766,
@@ -354,10 +383,10 @@
 			}
 		},
 		{
-			"file": "Services/InitService.js",
+			"file": "Services/RegisterService.js",
 			"settings":
 			{
-				"buffer_size": 17,
+				"buffer_size": 1010,
 				"line_ending": "Windows"
 			}
 		},
@@ -365,7 +394,7 @@
 			"file": "Services/UploadStudentDataService.js",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 913,
 				"line_ending": "Windows"
 			}
 		},
@@ -373,14 +402,30 @@
 			"file": "Services/LoginService.js",
 			"settings":
 			{
-				"buffer_size": 816,
+				"buffer_size": 832,
 				"line_ending": "Windows"
 			}
 		}
 	],
-	"build_system": "Packages/User/node.sublime-build",
+	"build_system": "Packages/User/Node.sublime-build",
 	"build_system_choices":
 	[
+		[
+			[
+				[
+					"Packages/User/Node.sublime-build",
+					""
+				],
+				[
+					"Packages/User/Node.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/Node.sublime-build",
+				""
+			]
+		],
 		[
 			[
 				[
@@ -446,6 +491,8 @@
 	],
 	"file_history":
 	[
+		"/D/LetsIntern-College-Login-Feature/View/trial.html",
+		"/D/LetsIntern-College-Login-Feature/Services/InitService.js",
 		"/D/LetsIntern-College-Login-Feature/AppConfig.js",
 		"/D/LetsIntern-College-Login-Feature/Database/dbInterface.js",
 		"/D/LetsIntern-College-Login-Feature/Services/publicRoutes.js",
@@ -543,7 +590,7 @@
 	],
 	"find":
 	{
-		"height": 34.0
+		"height": 36.0
 	},
 	"find_in_files":
 	{
@@ -589,7 +636,7 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -598,160 +645,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1053,
+						"buffer_size": 1696,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								717,
-								717
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Routes/PublicRoutes.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 355,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								355,
-								355
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Routes/PrivateRoutes.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 637,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								447,
-								447
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "AppConfig.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 155,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								155,
-								155
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "Database/UserSchemas.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 664,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								315,
-								315
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "Services/RegisterService.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 766,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								310,
-								325
+								745,
+								745
 							]
 						],
 						"settings":
@@ -767,53 +669,87 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "Services/InitService.js",
+					"buffer": 1,
+					"file": "/C/Users/mdixit/Desktop/resume.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 17,
+						"buffer_size": 4731,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								17,
-								17
+								2821,
+								2821
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 840.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/mdixit/AppData/Roaming/npm/node_modules/resume-cli/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3046,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								356,
+								356
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "Services/UploadStudentDataService.js",
+					"buffer": 3,
+					"file": "/C/Users/mdixit/AppData/Roaming/npm/node_modules/resume-cli/resume.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 4571,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								455,
+								455
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -823,20 +759,50 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "Services/LoginService.js",
+					"buffer": 4,
+					"file": "/C/Users/mdixit/AppData/Local/Temp/SchedChangeEmail_16443119-1.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 816,
+						"buffer_size": 59920,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								809,
-								809
+								24388,
+								24392
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 10740.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Routes/PublicRoutes.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 351,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								231,
+								231
 							]
 						],
 						"settings":
@@ -845,10 +811,213 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 102.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Routes/PrivateRoutes.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 321,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								321,
+								321
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "AppConfig.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 123,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								123,
+								123
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "Database/UserSchemas.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 522,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								70,
+								70
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "Database/dbInterface.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 766,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								267,
+								267
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "Services/RegisterService.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1010,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								229,
+								229
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "Services/UploadStudentDataService.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 913,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								583,
+								583
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "Services/LoginService.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 832,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								393,
+								393
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -887,13 +1056,13 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 175.0
+		"height": 345.0
 	},
 	"output.find_results":
 	{
 		"height": 0.0
 	},
-	"pinned_build_system": "Packages/User/node.sublime-build",
+	"pinned_build_system": "Packages/User/Node.sublime-build",
 	"project": "CollegeLogin.sublime-project",
 	"replace":
 	{
@@ -935,7 +1104,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 250.0,
+	"side_bar_width": 345.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
